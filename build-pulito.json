@@ -32,7 +32,7 @@
    "step": "installTheme",
    "themeData": {
     "resource": "wordpress.org/themes",
-    "slug": "storefront"
+    "slug": "drinkify-lite"
    },
    "options": {
     "activate": true
@@ -312,6 +312,14 @@
    "data": {
     "resource": "url",
     "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini/Y04.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img/logo-quiete.png",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/marchio/logo-quiete.png"
    }
   },
   {

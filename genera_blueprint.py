@@ -33,7 +33,7 @@ def passi_costruzione(variante, base=None):
     passi = [
         {"step": "installPlugin", "pluginData": {"resource": "wordpress.org/plugins", "slug": "woocommerce"},
          "options": {"activate": True}},
-        {"step": "installTheme", "themeData": {"resource": "wordpress.org/themes", "slug": "storefront"},
+        {"step": "installTheme", "themeData": {"resource": "wordpress.org/themes", "slug": "drinkify-lite"},
          "options": {"activate": True}},
         {"step": "setSiteLanguage", "language": "it_IT"},
         {"step": "mkdir", "path": f"{DATI}/img"},
@@ -47,6 +47,8 @@ def passi_costruzione(variante, base=None):
     if base:  # le immagini solo con URL (nella prova inline non ci sono)
         for f in sorted((QUI / "immagini").glob("*.jpg")):
             passi.append({"step": "writeFile", "path": f"{DATI}/img/{f.name}", "data": url(base, f"immagini/{f.name}")})
+    if base:
+        passi.append({"step": "writeFile", "path": f"{DATI}/img/logo-quiete.png", "data": url(base, "marchio/logo-quiete.png")})
     passi.append({"step": "runPHP",
                   "code": f"<?php define('QUIETE_VARIANTE', '{variante}'); require '{DATI}/build.php';"})
     return passi

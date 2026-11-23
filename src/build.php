@@ -23,7 +23,7 @@ if (!wc_get_page_id('shop') || wc_get_page_id('shop') < 1) { WC_Install::create_
 
 /* ---------- 1. Impostazioni ---------- */
 update_option('blogname', 'La Quiete nelle Cime');
-update_option('blogdescription', 'Negozio di prova per i corsi StyleSoft dML: azienda, prodotti e clienti sono inventati');
+update_option('blogdescription', 'Azienda agricola · Agriturismo, dal 1978');
 update_option('woocommerce_default_country', 'IT:TV');
 update_option('woocommerce_store_address', 'Borgo Cime 1');
 update_option('woocommerce_store_city', 'Pieve di Sotto');
@@ -93,6 +93,19 @@ $ze->set_zone_name('Austria e Germania'); $ze->set_zone_order(2);
 $ze->add_location('AT', 'country'); $ze->add_location('DE', 'country'); $ze->save();
 $fe = $ze->add_shipping_method('flat_rate');
 update_option("woocommerce_flat_rate_{$fe}_settings", array('title' => 'Spedizione estero', 'tax_status' => 'none', 'cost' => '14.90', 'type' => 'class'));
+
+/* ---------- 4b. Logo ---------- */
+$logo = $dir . 'img/logo-quiete.png';
+if (file_exists($logo)) {
+    $tmp = wp_tempnam('logo-quiete.png');
+    copy($logo, $tmp);
+    $lid = media_handle_sideload(array('name' => 'logo-quiete.png', 'tmp_name' => $tmp), 0, 'Logo La Quiete nelle Cime');
+    if (!is_wp_error($lid)) {
+        update_post_meta($lid, '_wp_attachment_image_alt', 'La Quiete nelle Cime, azienda agricola e agriturismo dal 1978');
+        set_theme_mod('custom_logo', $lid);
+        update_option('site_logo', $lid);
+    }
+}
 
 /* ---------- 5. Prodotti ---------- */
 $mesi_it = array(1 => 'gennaio', 2 => 'febbraio', 3 => 'marzo', 4 => 'aprile', 5 => 'maggio', 6 => 'giugno',
