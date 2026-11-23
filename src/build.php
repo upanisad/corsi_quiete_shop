@@ -199,6 +199,9 @@ if ($variante === 'sporco') {
     $c = $dati['c02_sporca'];                                                              // 6 descrizione C02 con il vino sbagliato
     $prod['C02']->set_description(str_replace(array($c[0], esc_html($c[0])), array($c[1], esc_html($c[1])), $prod['C02']->get_description()));
     $prod['C02']->save();
+    $att = $prod['V03']->get_attributes();                                                 // 7 V03 Extra Brut con 14 g/l di zuccheri (valore da Extra Dry)
+    foreach ($att as $a) { if ($a->get_name() === 'Zuccheri residui') { $a->set_options(array('14 g/l')); } }
+    $prod['V03']->set_attributes($att); $prod['V03']->save();
 }
 
 /* ---------- 7. Clienti e ordini (dal dataset del caso) ---------- */

@@ -1,6 +1,6 @@
 # Chiave docente — negozio La Quiete "con errori"
 
-Il negozio "sporco" è identico a quello pulito, tranne 6 errori piantati e 12 campi tecnici lasciati «Da verificare» (dati mancanti, vedi la sezione sotto). Non darla ai corsisti.
+Il negozio "sporco" è identico a quello pulito, tranne 7 errori piantati e 12 campi tecnici lasciati «Da verificare» (dati mancanti, vedi la sezione sotto). Non darla ai corsisti.
 Come si vede: **Prodotti → Tutti i prodotti** (colonne prezzo, categorie, scorta) e la scheda di ogni prodotto.
 
 | # | Prodotto | Errore piantato | Dove si vede | Correzione |
@@ -11,6 +11,7 @@ Come si vede: **Prodotti → Tutti i prodotti** (colonne prezzo, categorie, scor
 | 4 | D05 Focaccia di Pasqua | **Acquistabile** a novembre | Elenco prodotti, colonna Scorta ("Disponibile") | Scorta "Esaurito" (si prepara solo a marzo e aprile) |
 | 5 | V09 Passito "Sera" | Nella categoria **Formaggi** | Elenco prodotti, colonna Categorie | Categoria "Vini" |
 | 6 | C02 "Tavola delle Cime" | Descrizione con **Brut "Cime"** al posto dell'Extra Brut "Rive Alte" | Scheda del prodotto, descrizione | Contiene V03 + F03 + F04 + D02 |
+| 7 | V03 Extra Brut "Rive Alte" | Zuccheri residui **14 g/l** nella scheda tecnica: è un valore da Extra Dry (12–17), non da Extra Brut (fino a 6). La descrizione dice 4 g/l | Scheda → Informazioni aggiuntive (in amministrazione: Dati prodotto → Attributi) | **4 g/l**, coerente con Extra Brut e con la descrizione |
 
 ## Campi tecnici «Da verificare» (dati mancanti)
 Nella scheda del prodotto, tab **Informazioni aggiuntive** (e valore energetico in descrizione), questi campi mostrano «Da verificare». Nel negozio pulito hanno il valore giusto, che è anche la correzione attesa (viene dalla scheda prodotto della Bibbia, `bibbia/08-schede-prodotto.md`, dove lo stato è *Mancante*). Non sono errori di valore: sono dati che l'azienda non ha in anagrafica.
