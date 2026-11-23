@@ -241,8 +241,45 @@ foreach (array('woocommerce_cart_page_id' => 'Carrello', 'woocommerce_checkout_p
 $shop_id = wc_get_page_id('shop');
 if ($shop_id) { wp_update_post(array('ID' => $shop_id, 'post_title' => 'Negozio')); }
 update_option('sidebars_widgets', array('wp_inactive_widgets' => array(), 'sidebar-1' => array(), 'array_version' => 3));
+/* ---------- 9. Home, footer e aspetto (tema a blocchi Drinkify Lite) ---------- */
+$home_blocks = '<!-- wp:cover {"customOverlayColor":"#4f1420","minHeight":380,"isDark":true,"align":"full"} -->'
+ . '<div class="wp-block-cover alignfull is-light" style="min-height:380px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim" style="background-color:#4f1420"></span><div class="wp-block-cover__inner-container">'
+ . '<!-- wp:heading {"textAlign":"center","level":1,"textColor":"white"} --><h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">La Quiete nelle Cime</h1><!-- /wp:heading -->'
+ . '<!-- wp:paragraph {"align":"center","textColor":"white","fontSize":"large"} --><p class="has-text-align-center has-white-color has-text-color has-large-font-size">Vino, formaggi, yogurt e dolci fatti da noi, sui colli del Prosecco Superiore. Azienda agricola e agriturismo dal 1978.</p><!-- /wp:paragraph -->'
+ . '<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} --><div class="wp-block-buttons"><!-- wp:button --><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="' . esc_url(get_permalink(wc_get_page_id('shop'))) . '">Vai al negozio</a></div><!-- /wp:button --></div><!-- /wp:buttons -->'
+ . '</div></div><!-- /wp:cover -->'
+ . '<!-- wp:spacer {"height":"40px"} --><div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->'
+ . '<!-- wp:heading {"textAlign":"center"} --><h2 class="wp-block-heading has-text-align-center">I nostri prodotti</h2><!-- /wp:heading -->'
+ . '<!-- wp:shortcode -->[products limit="12" columns="3" orderby="menu_order" order="ASC"]<!-- /wp:shortcode -->';
+$home_id = wp_insert_post(array('post_type' => 'page', 'post_title' => 'Home', 'post_name' => 'home', 'post_status' => 'publish', 'post_content' => $home_blocks));
+
+/* parti del template: sostituisco il footer d'esempio del tema (indirizzo e telefono inventati altrove) */
+$tema = get_stylesheet();
+$footer_blocks = '<!-- wp:group {"style":{"spacing":{"padding":{"top":"40px","bottom":"40px"}}},"backgroundColor":"contrast","textColor":"base","layout":{"type":"constrained"}} -->'
+ . '<div class="wp-block-group has-base-color has-contrast-background-color has-text-color has-background" style="padding-top:40px;padding-bottom:40px">'
+ . '<!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center"><strong>La Quiete nelle Cime</strong> · Azienda agricola · Agriturismo, dal 1978<br>Borgo Cime 1, Pieve di Sotto (TV) · info@quietenellecime.example · 0499 55 01 001</p><!-- /wp:paragraph -->'
+ . '<!-- wp:page-list {"isNavigationChild":false} /-->'
+ . '<!-- wp:paragraph {"align":"center","fontSize":"small"} --><p class="has-text-align-center has-small-font-size">Negozio di prova per i corsi StyleSoft dML: azienda, prodotti, prezzi e clienti sono inventati.</p><!-- /wp:paragraph -->'
+ . '</div><!-- /wp:group -->';
+$footers = get_block_templates(array('area' => 'footer'), 'wp_template_part');
+foreach ($footers as $f) {
+    $id = wp_insert_post(array('post_type' => 'wp_template_part', 'post_name' => $f->slug, 'post_title' => 'Footer', 'post_status' => 'publish', 'post_content' => $footer_blocks, 'tax_input' => array('wp_theme' => array($tema), 'wp_template_part_area' => array('footer'))));
+}
+$hdr = 'header';
+foreach (get_block_templates(array('area' => 'header'), 'wp_template_part') as $h) { if ($h->slug === 'header') { $hdr = 'header'; break; } $hdr = $h->slug; }
+$ftr = $footers ? $footers[0]->slug : 'footer';
+$tpl = '<!-- wp:template-part {"slug":"' . $hdr . '","tagName":"header"} /--><!-- wp:group {"tagName":"main","layout":{"type":"default"}} --><main class="wp-block-group"><!-- wp:post-content {"layout":{"type":"default"}} /--></main><!-- /wp:group --><!-- wp:template-part {"slug":"' . $ftr . '","tagName":"footer"} /-->';
+foreach (array('front-page', 'home') as $slug) {
+    wp_insert_post(array('post_type' => 'wp_template', 'post_name' => $slug, 'post_title' => 'Home', 'post_status' => 'publish', 'post_content' => $tpl, 'tax_input' => array('wp_theme' => array($tema))));
+}
+wp_update_custom_css_post(
+    ".wp-block-site-logo img{width:170px!important;height:auto!important}\n"
+  . ".woocommerce-store-notice,.wc-block-components-notice-banner.is-info{background:#4f1420!important;color:#fff!important}\n"
+  . ".woocommerce-store-notice a{color:#f1dc8a!important}",
+    array('stylesheet' => $tema)
+);
 update_option('show_on_front', 'page');
-update_option('page_on_front', wc_get_page_id('shop'));
+update_option('page_on_front', $home_id);
 
 flush_rewrite_rules();
 wc_delete_product_transients();
