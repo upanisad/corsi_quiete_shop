@@ -306,21 +306,55 @@ $tpl = '<!-- wp:template-part {"slug":"' . $hdr . '","tagName":"header"} /--><!-
 foreach (array('front-page', 'home') as $slug) {
     quiete_tpl('wp_template', $slug, 'Home', $tpl, $tema);
 }
+
+/* pagine del negozio: sostituisco i "pattern" inglesi del tema (banner, sidebar con filtri rotti, FAQ, pagamenti) con blocchi miei in italiano */
+$banda = function ($blocco) {
+    return '<!-- wp:group {"style":{"color":{"background":"#4f1420"},"spacing":{"padding":{"top":"36px","bottom":"36px"}}},"layout":{"type":"constrained"}} -->'
+        . '<div class="wp-block-group has-background" style="background-color:#4f1420;padding-top:36px;padding-bottom:36px">' . $blocco . '</div><!-- /wp:group -->';
+};
+$titolo_bianco = '"textAlign":"center","level":1,"style":{"color":{"text":"#ffffff"}}';
+$b_query = $banda('<!-- wp:query-title {"type":"archive","showPrefix":false,' . $titolo_bianco . '} /-->');
+$b_post  = $banda('<!-- wp:post-title {' . $titolo_bianco . '} /-->');
+$spedizioni = '<!-- wp:group {"style":{"spacing":{"padding":{"top":"16px","bottom":"16px"}}},"layout":{"type":"constrained"}} --><div class="wp-block-group" style="padding-top:16px;padding-bottom:16px">'
+    . '<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Spedizioni e resi</h3><!-- /wp:heading -->'
+    . '<!-- wp:paragraph --><p>Spedizione gratuita da 89 €. I prodotti freschi hanno regole particolari: tutti i dettagli sono nella pagina <a href="' . esc_url(home_url('/spedizioni-e-resi/')) . '">Spedizioni e resi</a>.</p><!-- /wp:paragraph -->'
+    . '</div><!-- /wp:group -->';
+$sost_pattern = array(
+    'drinkify-lite/shop-header' => $b_query,
+    'drinkify-lite/post-header-with-background' => $b_post,
+    'drinkify-lite/archive-header-with-background' => $b_query,
+    'drinkify-lite/blog-header-with-background' => $b_query,
+    'drinkify-lite/secure-transactions' => '',
+    'drinkify-lite/shopping-features' => '',
+    'drinkify-lite/product-faq' => $spedizioni,
+);
+$sost_testi = array(
+    '>Description<' => '>Descrizione<',
+    '>Additional Information<' => '>Informazioni aggiuntive<',
+    '>Reviews<' => '>Recensioni<',
+    '>Related Products<' => '>Prodotti correlati<',
+    '"prefix":"Category: "' => '"prefix":"Categoria: "',
+    '<p>No products were found matching your selection.</p>' => '<p>Nessun prodotto corrisponde alla ricerca.</p>',
+    '<strong>No results found</strong>' => '<strong>Nessun risultato</strong>',
+);
+foreach (get_block_templates(array(), 'wp_template') as $t) {
+    $c = $t->content;
+    foreach ($sost_pattern as $slug_p => $rep) { $c = str_replace('<!-- wp:pattern {"slug":"' . $slug_p . '"} /-->', $rep, $c); }
+    $c = preg_replace('/<!-- wp:post-terms \{"term":"product_(tag|brand)"[^}]*\} \/-->/', '', $c);
+    $c = str_replace(array_keys($sost_testi), array_values($sost_testi), $c);
+    if ($c !== $t->content) { quiete_tpl('wp_template', $t->slug, $t->title ? $t->title : $t->slug, $c, $tema); }
+}
+$sidebar = '<!-- wp:group {"style":{"spacing":{"padding":{"top":"8px"}}},"layout":{"type":"constrained"}} --><div class="wp-block-group" style="padding-top:8px">'
+    . '<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Categorie</h3><!-- /wp:heading -->'
+    . '<!-- wp:woocommerce/product-categories {"hasCount":true} /--></div><!-- /wp:group -->';
+foreach (array('product-sidebar', 'sidebar') as $sp) { quiete_tpl('wp_template_part', $sp, 'Sidebar', $sidebar, $tema, 'uncategorized'); }
+
 wp_update_custom_css_post(
     ".wp-block-site-logo img{width:170px!important;height:auto!important}\n"
   . ".woocommerce-store-notice,.wc-block-components-notice-banner.is-info{background:#4f1420!important;color:#fff!important}\n"
   . ".woocommerce-store-notice a{color:#f1dc8a!important}",
     array('stylesheet' => $tema)
 );
-
-/* DEBUG-TEMP */
-$dump = '';
-foreach (array('wp_template','wp_template_part') as $tp) {
-    foreach (get_block_templates(array(), $tp) as $t) {
-        if (preg_match('/product|shop|archive|sidebar|page|index|front|home/i', $t->slug)) { $dump .= "\n=====$tp:{$t->slug}\n" . $t->content; }
-    }
-}
-file_put_contents(WP_CONTENT_DIR . '/uploads/debug-tpl.txt', $dump);
 update_option('show_on_front', 'page');
 update_option('page_on_front', $home_id);
 
