@@ -98,7 +98,9 @@ update_option("woocommerce_flat_rate_{$fe}_settings", array('title' => 'Spedizio
 $mesi_it = array(1 => 'gennaio', 2 => 'febbraio', 3 => 'marzo', 4 => 'aprile', 5 => 'maggio', 6 => 'giugno',
     7 => 'luglio', 8 => 'agosto', 9 => 'settembre', 10 => 'ottobre', 11 => 'novembre', 12 => 'dicembre');
 $prod = array(); // sku => WC_Product
+$pos = 0;
 foreach ($dati['prodotti'] as $d) {
+    $pos++;
     $esistente = wc_get_product_id_by_sku($d['sku']);
     $p = $esistente ? wc_get_product($esistente) : new WC_Product_Simple();
     $p->set_name($d['nome']);
@@ -108,6 +110,7 @@ foreach ($dati['prodotti'] as $d) {
     $p->set_tax_status('taxable');
     $p->set_tax_class($d['classe_iva']);
     $p->set_catalog_visibility('visible');
+    $p->set_menu_order($pos);
     $p->set_category_ids(array($cat_id[$d['categoria']]));
     $p->set_shipping_class_id($d['classe_spedizione'] ? $sp_id[$d['classe_spedizione']] : 0);
     $p->set_short_description($d['breve']);
@@ -198,6 +201,7 @@ foreach ($ordini as $o) {
     if (in_array($o['stato'], array('completed', 'processing', 'refunded'), true)) { $ord->set_date_paid($o['data'] . ' 10:05:00'); }
     $ord->add_order_note('Ordine del dataset del caso: ' . $o['id'] . ($o['note'] ? ' (' . $o['note'] . ')' : ''));
     $ord->save();
+    wp_update_post(array('ID' => $ord->get_id(), 'post_title' => 'Ordine – ' . $o['data']));
     $n_ord++;
 }
 
@@ -213,6 +217,17 @@ foreach ($pagine as $titolo => $testo) {
         wp_insert_post(array('post_type' => 'page', 'post_title' => $titolo, 'post_status' => 'publish', 'post_content' => $testo));
     }
 }
+/* pulizia residui WordPress e pagine WooCommerce in italiano */
+foreach (array('sample-page', 'hello-world') as $slug) {
+    foreach (get_posts(array('name' => $slug, 'post_type' => array('page', 'post'), 'post_status' => 'any', 'numberposts' => 1)) as $x) { wp_delete_post($x->ID, true); }
+}
+foreach (array('woocommerce_cart_page_id' => 'Carrello', 'woocommerce_checkout_page_id' => 'Cassa', 'woocommerce_myaccount_page_id' => 'Il mio account') as $opt => $tit) {
+    $pid = (int) get_option($opt);
+    if ($pid) { wp_update_post(array('ID' => $pid, 'post_title' => $tit)); }
+}
+$shop_id = wc_get_page_id('shop');
+if ($shop_id) { wp_update_post(array('ID' => $shop_id, 'post_title' => 'Negozio')); }
+update_option('sidebars_widgets', array('wp_inactive_widgets' => array(), 'sidebar-1' => array(), 'array_version' => 3));
 update_option('show_on_front', 'page');
 update_option('page_on_front', wc_get_page_id('shop'));
 
