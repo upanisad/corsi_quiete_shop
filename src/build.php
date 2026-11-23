@@ -253,6 +253,16 @@ $home_blocks = '<!-- wp:cover {"customOverlayColor":"#4f1420","minHeight":380,"i
  . '<!-- wp:shortcode -->[products limit="12" columns="3" orderby="menu_order" order="ASC"]<!-- /wp:shortcode -->';
 $home_id = wp_insert_post(array('post_type' => 'page', 'post_title' => 'Home', 'post_name' => 'home', 'post_status' => 'publish', 'post_content' => $home_blocks));
 
+/* inserisce un template/parte di template e gli assegna esplicitamente il tema (tax_input non vale senza utente loggato) */
+function quiete_tpl($tipo, $slug, $titolo, $contenuto, $tema, $area = '') {
+    $id = wp_insert_post(array('post_type' => $tipo, 'post_name' => $slug, 'post_title' => $titolo, 'post_status' => 'publish', 'post_content' => $contenuto));
+    if ($id && !is_wp_error($id)) {
+        wp_set_object_terms($id, $tema, 'wp_theme');
+        if ($area) { wp_set_object_terms($id, $area, 'wp_template_part_area'); }
+    }
+    return $id;
+}
+
 /* parti del template: sostituisco il footer d'esempio del tema (indirizzo e telefono inventati altrove) */
 $tema = get_stylesheet();
 $footer_blocks = '<!-- wp:group {"style":{"spacing":{"padding":{"top":"40px","bottom":"40px"}}},"backgroundColor":"contrast","textColor":"base","layout":{"type":"constrained"}} -->'
@@ -263,7 +273,7 @@ $footer_blocks = '<!-- wp:group {"style":{"spacing":{"padding":{"top":"40px","bo
  . '</div><!-- /wp:group -->';
 $footers = get_block_templates(array('area' => 'footer'), 'wp_template_part');
 foreach ($footers as $f) {
-    $id = wp_insert_post(array('post_type' => 'wp_template_part', 'post_name' => $f->slug, 'post_title' => 'Footer', 'post_status' => 'publish', 'post_content' => $footer_blocks, 'tax_input' => array('wp_theme' => array($tema), 'wp_template_part_area' => array('footer'))));
+    $id = quiete_tpl('wp_template_part', $f->slug, 'Footer', $footer_blocks, $tema, 'footer');
 }
 /* il banner "Sweet Elegant Fine Winery" sta dentro la parte "Header With Banner": la sostituisco con la sola riga di intestazione (logo, titolo, menu, carrello) */
 $hdr = 'header';
@@ -272,14 +282,14 @@ if (!$base) { $base = get_block_template($tema . '//header', 'wp_template_part')
 if ($base) {
     foreach (get_block_templates(array('area' => 'header'), 'wp_template_part') as $h) {
         if (preg_match('/banner|hero/i', $h->slug)) {
-            wp_insert_post(array('post_type' => 'wp_template_part', 'post_name' => $h->slug, 'post_title' => 'Header', 'post_status' => 'publish', 'post_content' => $base->content, 'tax_input' => array('wp_theme' => array($tema), 'wp_template_part_area' => array('header'))));
+            quiete_tpl('wp_template_part', $h->slug, 'Header', $base->content, $tema, 'header');
         }
     }
 }
 $ftr = $footers ? $footers[0]->slug : 'footer';
 $tpl = '<!-- wp:template-part {"slug":"' . $hdr . '","tagName":"header"} /--><!-- wp:group {"tagName":"main","layout":{"type":"default"}} --><main class="wp-block-group"><!-- wp:post-content {"layout":{"type":"default"}} /--></main><!-- /wp:group --><!-- wp:template-part {"slug":"' . $ftr . '","tagName":"footer"} /-->';
 foreach (array('front-page', 'home') as $slug) {
-    wp_insert_post(array('post_type' => 'wp_template', 'post_name' => $slug, 'post_title' => 'Home', 'post_status' => 'publish', 'post_content' => $tpl, 'tax_input' => array('wp_theme' => array($tema))));
+    quiete_tpl('wp_template', $slug, 'Home', $tpl, $tema);
 }
 wp_update_custom_css_post(
     ".wp-block-site-logo img{width:170px!important;height:auto!important}\n"
