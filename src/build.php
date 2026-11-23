@@ -265,8 +265,17 @@ $footers = get_block_templates(array('area' => 'footer'), 'wp_template_part');
 foreach ($footers as $f) {
     $id = wp_insert_post(array('post_type' => 'wp_template_part', 'post_name' => $f->slug, 'post_title' => 'Footer', 'post_status' => 'publish', 'post_content' => $footer_blocks, 'tax_input' => array('wp_theme' => array($tema), 'wp_template_part_area' => array('footer'))));
 }
+/* il banner "Sweet Elegant Fine Winery" sta dentro la parte "Header With Banner": la sostituisco con la sola riga di intestazione (logo, titolo, menu, carrello) */
 $hdr = 'header';
-foreach (get_block_templates(array('area' => 'header'), 'wp_template_part') as $h) { if ($h->slug === 'header') { $hdr = 'header'; break; } $hdr = $h->slug; }
+$base = get_block_template($tema . '//primary-header', 'wp_template_part');
+if (!$base) { $base = get_block_template($tema . '//header', 'wp_template_part'); }
+if ($base) {
+    foreach (get_block_templates(array('area' => 'header'), 'wp_template_part') as $h) {
+        if (preg_match('/banner|hero/i', $h->slug)) {
+            wp_insert_post(array('post_type' => 'wp_template_part', 'post_name' => $h->slug, 'post_title' => 'Header', 'post_status' => 'publish', 'post_content' => $base->content, 'tax_input' => array('wp_theme' => array($tema), 'wp_template_part_area' => array('header'))));
+        }
+    }
+}
 $ftr = $footers ? $footers[0]->slug : 'footer';
 $tpl = '<!-- wp:template-part {"slug":"' . $hdr . '","tagName":"header"} /--><!-- wp:group {"tagName":"main","layout":{"type":"default"}} --><main class="wp-block-group"><!-- wp:post-content {"layout":{"type":"default"}} /--></main><!-- /wp:group --><!-- wp:template-part {"slug":"' . $ftr . '","tagName":"footer"} /-->';
 foreach (array('front-page', 'home') as $slug) {
