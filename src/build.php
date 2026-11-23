@@ -312,6 +312,15 @@ wp_update_custom_css_post(
   . ".woocommerce-store-notice a{color:#f1dc8a!important}",
     array('stylesheet' => $tema)
 );
+
+/* DEBUG-TEMP */
+$dump = '';
+foreach (array('wp_template','wp_template_part') as $tp) {
+    foreach (get_block_templates(array(), $tp) as $t) {
+        if (preg_match('/product|shop|archive|sidebar|page|index|front|home/i', $t->slug)) { $dump .= "\n=====$tp:{$t->slug}\n" . $t->content; }
+    }
+}
+file_put_contents(WP_CONTENT_DIR . '/uploads/debug-tpl.txt', $dump);
 update_option('show_on_front', 'page');
 update_option('page_on_front', $home_id);
 
