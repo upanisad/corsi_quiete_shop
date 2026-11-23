@@ -111,6 +111,10 @@ if (file_exists($logo)) {
 $mesi_it = array(1 => 'gennaio', 2 => 'febbraio', 3 => 'marzo', 4 => 'aprile', 5 => 'maggio', 6 => 'giugno',
     7 => 'luglio', 8 => 'agosto', 9 => 'settembre', 10 => 'ottobre', 11 => 'novembre', 12 => 'dicembre');
 $prod = array(); // sku => WC_Product
+$nomi = array();
+foreach ($dati['prodotti'] as $x) { $nomi[$x['sku']] = $x['nome']; }
+update_option('woocommerce_weight_unit', 'kg');
+update_option('woocommerce_dimension_unit', 'cm');
 $pos = 0;
 foreach ($dati['prodotti'] as $d) {
     $pos++;
@@ -131,7 +135,43 @@ foreach ($dati['prodotti'] as $d) {
     if ($d['mesi_stagione']) {
         $extra .= '<p><strong>Disponibile:</strong> ' . esc_html(implode(', ', array_map(function ($m) use ($mesi_it) { return $mesi_it[$m]; }, $d['mesi_stagione']))) . '.</p>';
     }
-    $p->set_description('<p>' . esc_html($d['lunga']) . '</p>' . $extra);
+    $sez = '<p>' . esc_html($d['lunga']) . '</p>' . $extra;
+    if ($d['componenti']) {
+        $sez .= '<h3>Contenuto</h3><ul>';
+        foreach ($d['componenti'] as $cc) { $sez .= '<li>' . esc_html($nomi[$cc]) . '</li>'; }
+        $sez .= '</ul>';
+    }
+    if (!empty($d['abbinamenti'])) { $sez .= '<h3>Abbinamenti</h3><p>' . esc_html($d['abbinamenti']) . '</p>'; }
+    if (!empty($d['ingredienti']) || !empty($d['allergeni_testo'])) {
+        $sez .= '<h3>Ingredienti e allergeni</h3>';
+        if (!empty($d['ingredienti'])) {
+            $ing = preg_replace('/\b([A-ZÀ-Ý]{3,})\b/u', '<strong>$1</strong>', esc_html($d['ingredienti']));
+            $sez .= '<p><strong>Ingredienti:</strong> ' . $ing . '.</p>';
+        }
+        if (!empty($d['allergeni_testo'])) { $sez .= '<p><strong>Allergeni:</strong> ' . esc_html($d['allergeni_testo']) . '.</p>'; }
+        if (!empty($d['tracce_testo'])) { $sez .= '<p>Può contenere tracce di: ' . esc_html($d['tracce_testo']) . '.</p>'; }
+    }
+    if (!empty($d['nutrizione'])) {
+        $sez .= '<h3>' . esc_html($d['nutrizione']['titolo']) . '</h3><table><tbody>';
+        foreach ($d['nutrizione']['righe'] as $r) {
+            $v = ($variante === 'sporco' && $d['nutrizione']['mancante']) ? 'Da verificare' : $r[1];
+            $sez .= '<tr><th>' . esc_html($r[0]) . '</th><td>' . esc_html($v) . '</td></tr>';
+        }
+        $sez .= '</tbody></table>';
+    }
+    if (!empty($d['conservazione'])) { $sez .= '<h3>Conservazione</h3><p>' . esc_html($d['conservazione']) . '</p>'; }
+    $p->set_description($sez);
+    $atts = array(); $ia = 0;
+    foreach ($d['attributi'] as $a) {
+        $val = ($variante === 'sporco' && $a['mancante']) ? 'Da verificare' : $a['valore'];
+        $at = new WC_Product_Attribute();
+        $at->set_id(0); $at->set_name($a['nome']); $at->set_options(array($val));
+        $at->set_position($ia++); $at->set_visible(true); $at->set_variation(false);
+        $atts[] = $at;
+    }
+    $p->set_attributes($atts);
+    if (!empty($d['peso_kg'])) { $p->set_weight((string) $d['peso_kg']); }
+    if (!empty($d['dim_cm'])) { $p->set_length((string) $d['dim_cm'][2]); $p->set_width((string) $d['dim_cm'][0]); $p->set_height((string) $d['dim_cm'][1]); }
     $fuori = $d['mesi_stagione'] && !in_array($mese_negozio, $d['mesi_stagione'], true);
     $p->set_manage_stock(false);
     $p->set_stock_status($fuori ? 'outofstock' : 'instock');
@@ -157,8 +197,7 @@ if ($variante === 'sporco') {
     $prod['D05']->set_stock_status('instock'); $prod['D05']->save();                       // 4 focaccia di Pasqua in vendita a novembre
     $prod['V09']->set_category_ids(array($cat_id['Formaggi'])); $prod['V09']->save();      // 5 passito tra i formaggi
     $c = $dati['c02_sporca'];                                                              // 6 descrizione C02 con il vino sbagliato
-    $prod['C02']->set_description(str_replace($c[0], $c[1], $prod['C02']->get_description()));
-    $prod['C02']->set_short_description(str_replace('Un vino', 'Un vino (Brut "Cime")', $prod['C02']->get_short_description()));
+    $prod['C02']->set_description(str_replace(array($c[0], esc_html($c[0])), array($c[1], esc_html($c[1])), $prod['C02']->get_description()));
     $prod['C02']->save();
 }
 

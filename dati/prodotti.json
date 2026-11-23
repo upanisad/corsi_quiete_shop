@@ -19,8 +19,111 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Il Brut della casa: secco, fresco, il nostro più venduto.",
-   "lunga": "Valdobbiadene Prosecco Superiore DOCG nella versione Brut, secca e fresca. È il vino che ci rappresenta di più e quello che i clienti riordinano più spesso. Bottiglia da 0,75 l."
+   "breve": "Valdobbiadene Prosecco Superiore DOCG Brut dai pendii di Borgo Cime: secco, fresco, con mela verde e fiori bianchi. Il vino di tutti i giorni.",
+   "lunga": "Il Brut \"Cime\" nasce da Glera coltivata sui pendii di Borgo Cime e spumantizzata in autoclave. Al naso mela verde e fiori bianchi; in bocca è secco e sapido, con una bollicina fine che pulisce il palato. È il vino con cui si comincia una cena, ma accompagna senza fatica anche piatti delicati.",
+   "abbinamenti": "Aperitivo, antipasti di verdure, risotti, crudo di pesce, formaggio Latteria fresco (F01).",
+   "peso_kg": 1.55,
+   "dim_cm": [
+    9,
+    9,
+    31
+   ],
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Cantina La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione",
+     "valore": "Valdobbiadene Prosecco Superiore DOCG",
+     "mancante": false
+    },
+    {
+     "nome": "Tipologia",
+     "valore": "Spumante Brut",
+     "mancante": false
+    },
+    {
+     "nome": "Annata",
+     "valore": "2025",
+     "mancante": false
+    },
+    {
+     "nome": "Formato",
+     "valore": "750 ml",
+     "mancante": false
+    },
+    {
+     "nome": "Alcol",
+     "valore": "11,5 % vol",
+     "mancante": false
+    },
+    {
+     "nome": "Vitigni",
+     "valore": "Glera 90%, Verdiso 7%, Perera 3%",
+     "mancante": false
+    },
+    {
+     "nome": "Zuccheri residui",
+     "valore": "9 g/l",
+     "mancante": false
+    },
+    {
+     "nome": "Acidità totale",
+     "valore": "6 g/l",
+     "mancante": false
+    },
+    {
+     "nome": "Pressione",
+     "valore": "5,5 bar",
+     "mancante": false
+    },
+    {
+     "nome": "Anidride solforosa totale",
+     "valore": "118 mg/l",
+     "mancante": false
+    },
+    {
+     "nome": "Provenienza delle uve",
+     "valore": "Cima Bassa e Costa del Sol (Borgo Cime)",
+     "mancante": false
+    },
+    {
+     "nome": "Metodo",
+     "valore": "Metodo Martinotti-Charmat: seconda fermentazione in autoclave (serbatoio chiuso a pressione), circa 60 giorni sui lieviti",
+     "mancante": false
+    },
+    {
+     "nome": "Chiusura",
+     "valore": "Tappo a fungo in sughero con gabbietta",
+     "mancante": false
+    },
+    {
+     "nome": "Temperatura di servizio",
+     "valore": "6-8 °C",
+     "mancante": false
+    },
+    {
+     "nome": "Consumo consigliato",
+     "valore": "Da bere giovane, entro 24 mesi dall'imbottigliamento",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "uve, mosto concentrato rettificato, anidride solforosa (conservante)",
+   "allergeni_testo": "Contiene solfiti",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valore energetico per 100 ml",
+    "righe": [
+     [
+      "Energia",
+      "67 kcal / 280 kJ"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in luogo fresco e al buio. Servire freddo e aprire con cautela."
   },
   {
    "sku": "V02",
@@ -36,8 +139,111 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Extra Dry dal gusto più morbido del Brut.",
-   "lunga": "Valdobbiadene Prosecco Superiore DOCG Extra Dry, leggermente più morbido del Brut. Adatto all'aperitivo e ai dolci non troppo zuccherati. Bottiglia da 0,75 l."
+   "breve": "Valdobbiadene Prosecco Superiore DOCG Extra Dry: il più morbido della cantina, con pera matura e agrumi. Residuo zuccherino lieve, 14 g/l.",
+   "lunga": "L'Extra Dry \"Quiete\" ha un residuo zuccherino di 14 grammi per litro: più morbido del Brut, anche se il nome può far pensare il contrario. Profumo di pera matura e scorza di cedro, bocca rotonda e cremosa, finale pulito. È il vino per chi non ama il secco troppo teso.",
+   "abbinamenti": "Antipasti di salumi, formaggi freschi, fritture leggere, cucina speziata, biscotti al Prosecco (D02).",
+   "peso_kg": 1.55,
+   "dim_cm": [
+    9,
+    9,
+    31
+   ],
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Cantina La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione",
+     "valore": "Valdobbiadene Prosecco Superiore DOCG",
+     "mancante": false
+    },
+    {
+     "nome": "Tipologia",
+     "valore": "Spumante Extra Dry",
+     "mancante": false
+    },
+    {
+     "nome": "Annata",
+     "valore": "2025",
+     "mancante": false
+    },
+    {
+     "nome": "Formato",
+     "valore": "750 ml",
+     "mancante": false
+    },
+    {
+     "nome": "Alcol",
+     "valore": "12 % vol",
+     "mancante": false
+    },
+    {
+     "nome": "Vitigni",
+     "valore": "Glera 92%, Bianchetta trevigiana 8%",
+     "mancante": true
+    },
+    {
+     "nome": "Zuccheri residui",
+     "valore": "14 g/l",
+     "mancante": true
+    },
+    {
+     "nome": "Acidità totale",
+     "valore": "5,8 g/l",
+     "mancante": true
+    },
+    {
+     "nome": "Pressione",
+     "valore": "5 bar",
+     "mancante": false
+    },
+    {
+     "nome": "Anidride solforosa totale",
+     "valore": "122 mg/l",
+     "mancante": false
+    },
+    {
+     "nome": "Provenienza delle uve",
+     "valore": "Costa del Sol e Pra' Lungo (Borgo Cime)",
+     "mancante": false
+    },
+    {
+     "nome": "Metodo",
+     "valore": "Metodo Martinotti-Charmat: seconda fermentazione in autoclave, circa 60 giorni sui lieviti",
+     "mancante": false
+    },
+    {
+     "nome": "Chiusura",
+     "valore": "Tappo a fungo in sughero con gabbietta",
+     "mancante": false
+    },
+    {
+     "nome": "Temperatura di servizio",
+     "valore": "6-8 °C",
+     "mancante": false
+    },
+    {
+     "nome": "Consumo consigliato",
+     "valore": "Da bere giovane, entro 24 mesi dall'imbottigliamento",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "uve, mosto concentrato rettificato, anidride solforosa (conservante)",
+   "allergeni_testo": "Contiene solfiti",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valore energetico per 100 ml",
+    "righe": [
+     [
+      "Energia",
+      "72 kcal / 301 kJ"
+     ]
+    ],
+    "mancante": true
+   },
+   "conservazione": "Conservare in luogo fresco e al buio. Servire freddo e aprire con cautela."
   },
   {
    "sku": "V03",
@@ -53,8 +259,116 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Extra Brut dai vigneti più ripidi. Quantità limitata.",
-   "lunga": "Valdobbiadene DOCG Extra Brut dalle Rive Alte, i nostri vigneti più ripidi. Molto secco e delicato. Se ne produce poco: quando finisce, finisce. Bottiglia da 0,75 l."
+   "breve": "Rive di Borgo Cime: Glera da una sola parcella ripidissima, vendemmiata a mano. Extra Brut, minerale e teso. Quantità limitata.",
+   "lunga": "\"Rive\" è la menzione dei vigneti più ripidi: l'uva si raccoglie a mano e il nome della località va in etichetta, qui Borgo Cime. Rive Alte è la parcella più scoscesa dell'azienda. Il vino è un Extra Brut (solo 4 grammi di zucchero per litro): sentori di mela bianca, pietra bagnata e fiori di campo, bocca tesa e lunga. Se ne fanno poche bottiglie ogni anno.",
+   "abbinamenti": "Crudo di mare, ostriche, asparagi bianchi, baccalà mantecato, pesce di lago.",
+   "peso_kg": 1.63,
+   "dim_cm": [
+    9,
+    9,
+    31
+   ],
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Cantina La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione",
+     "valore": "Valdobbiadene Prosecco Superiore DOCG",
+     "mancante": false
+    },
+    {
+     "nome": "Menzione geografica",
+     "valore": "Rive di Borgo Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Tipologia",
+     "valore": "Spumante Extra Brut",
+     "mancante": false
+    },
+    {
+     "nome": "Annata",
+     "valore": "2025",
+     "mancante": false
+    },
+    {
+     "nome": "Formato",
+     "valore": "750 ml",
+     "mancante": false
+    },
+    {
+     "nome": "Alcol",
+     "valore": "12 % vol",
+     "mancante": false
+    },
+    {
+     "nome": "Vitigni",
+     "valore": "Glera 95%, Bianchetta trevigiana 5%",
+     "mancante": false
+    },
+    {
+     "nome": "Zuccheri residui",
+     "valore": "4 g/l",
+     "mancante": false
+    },
+    {
+     "nome": "Acidità totale",
+     "valore": "6,3 g/l",
+     "mancante": false
+    },
+    {
+     "nome": "Pressione",
+     "valore": "5,5 bar",
+     "mancante": false
+    },
+    {
+     "nome": "Anidride solforosa totale",
+     "valore": "95 mg/l",
+     "mancante": false
+    },
+    {
+     "nome": "Provenienza delle uve",
+     "valore": "Parcella Rive Alte (Borgo Cime), vendemmia manuale",
+     "mancante": false
+    },
+    {
+     "nome": "Metodo",
+     "valore": "Metodo Martinotti-Charmat: seconda fermentazione in autoclave, circa 90 giorni sui lieviti",
+     "mancante": false
+    },
+    {
+     "nome": "Chiusura",
+     "valore": "Tappo a fungo in sughero con gabbietta",
+     "mancante": false
+    },
+    {
+     "nome": "Temperatura di servizio",
+     "valore": "8-10 °C",
+     "mancante": false
+    },
+    {
+     "nome": "Consumo consigliato",
+     "valore": "Entro 4 anni dall'imbottigliamento",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "uve, mosto concentrato rettificato, anidride solforosa (conservante)",
+   "allergeni_testo": "Contiene solfiti",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valore energetico per 100 ml",
+    "righe": [
+     [
+      "Energia",
+      "68 kcal / 285 kJ"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in luogo fresco e al buio. Servire freddo e aprire con cautela."
   },
   {
    "sku": "V04",
@@ -70,8 +384,111 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Rifermentato in bottiglia, con il fondo.",
-   "lunga": "Valdobbiadene DOCG Sui Lieviti, rifermentato in bottiglia: può presentare un leggero fondo naturale. Prima di servire si può capovolgere piano la bottiglia o lasciar depositare. Bottiglia da 0,75 l."
+   "breve": "Valdobbiadene Prosecco Superiore DOCG Sui Lieviti: rifermentato in bottiglia, velato, con crosta di pane e agrumi. Brut Nature, 1,5 g/l.",
+   "lunga": "Il \"Fondo\" rifermenta in bottiglia e non viene sboccato (cioè il deposito di lieviti non si toglie): per questo è leggermente velato. Si può versare limpido, lasciando il fondo sul fondo, oppure rimescolarlo capovolgendo piano la bottiglia prima di aprire. Profumo di crosta di pane e agrumi, bocca asciutta e viva, senza zucchero aggiunto.",
+   "abbinamenti": "Salumi, uova, fritture di verdure, formaggio Latteria fresco (F01), cicchetti.",
+   "peso_kg": 1.5,
+   "dim_cm": [
+    9,
+    9,
+    31
+   ],
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Cantina La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione",
+     "valore": "Valdobbiadene Prosecco Superiore DOCG",
+     "mancante": false
+    },
+    {
+     "nome": "Tipologia",
+     "valore": "Spumante Brut Nature, rifermentato in bottiglia (sui lieviti)",
+     "mancante": false
+    },
+    {
+     "nome": "Annata",
+     "valore": "2025",
+     "mancante": false
+    },
+    {
+     "nome": "Formato",
+     "valore": "750 ml",
+     "mancante": false
+    },
+    {
+     "nome": "Alcol",
+     "valore": "11,5 % vol",
+     "mancante": false
+    },
+    {
+     "nome": "Vitigni",
+     "valore": "Glera 100%",
+     "mancante": false
+    },
+    {
+     "nome": "Zuccheri residui",
+     "valore": "1,5 g/l",
+     "mancante": true
+    },
+    {
+     "nome": "Acidità totale",
+     "valore": "6,1 g/l",
+     "mancante": true
+    },
+    {
+     "nome": "Pressione",
+     "valore": "4,5 bar",
+     "mancante": false
+    },
+    {
+     "nome": "Anidride solforosa totale",
+     "valore": "70 mg/l",
+     "mancante": false
+    },
+    {
+     "nome": "Provenienza delle uve",
+     "valore": "Pra' Lungo (Borgo Cime)",
+     "mancante": false
+    },
+    {
+     "nome": "Metodo",
+     "valore": "Rifermentazione in bottiglia, non sboccato: il fondo di lieviti resta nella bottiglia",
+     "mancante": false
+    },
+    {
+     "nome": "Chiusura",
+     "valore": "Tappo a corona",
+     "mancante": false
+    },
+    {
+     "nome": "Temperatura di servizio",
+     "valore": "6-8 °C",
+     "mancante": false
+    },
+    {
+     "nome": "Consumo consigliato",
+     "valore": "Entro 18 mesi dall'imbottigliamento",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "uve, mosto d'uve concentrato, lieviti, anidride solforosa (conservante)",
+   "allergeni_testo": "Contiene solfiti",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valore energetico per 100 ml",
+    "righe": [
+     [
+      "Energia",
+      "64 kcal / 268 kJ"
+     ]
+    ],
+    "mancante": true
+   },
+   "conservazione": "Conservare in luogo fresco e al buio. Servire freddo e aprire con cautela."
   },
   {
    "sku": "V05",
@@ -87,8 +504,111 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Il Brut \"Cime\" nel formato Magnum, forte a Natale.",
-   "lunga": "Il Valdobbiadene Prosecco Superiore DOCG Brut \"Cime\" in bottiglia Magnum da 1,5 litri: pensato per le tavole numerose e per i regali. Va a ruba a dicembre."
+   "breve": "Il Brut \"Cime\" in Magnum da 1,5 litri: lo stesso vino di V01, per le tavole numerose e per i brindisi di Natale.",
+   "lunga": "È lo stesso Brut \"Cime\" della bottiglia da 0,75 litri, imbottigliato in magnum (1,5 litri, cioè due bottiglie). Nel formato grande la bollicina resta più fine e il vino invecchia più lentamente. Si serve ben freddo e si apre in tavola davanti a tutti.",
+   "abbinamenti": "Tavole numerose, brindisi di Natale e di fine anno, aperitivo per molti ospiti, risotti e antipasti.",
+   "peso_kg": 3.25,
+   "dim_cm": [
+    12,
+    12,
+    38
+   ],
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Cantina La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione",
+     "valore": "Valdobbiadene Prosecco Superiore DOCG",
+     "mancante": false
+    },
+    {
+     "nome": "Tipologia",
+     "valore": "Spumante Brut",
+     "mancante": false
+    },
+    {
+     "nome": "Annata",
+     "valore": "2025",
+     "mancante": false
+    },
+    {
+     "nome": "Formato",
+     "valore": "1,5 l (magnum)",
+     "mancante": false
+    },
+    {
+     "nome": "Alcol",
+     "valore": "11,5 % vol",
+     "mancante": false
+    },
+    {
+     "nome": "Vitigni",
+     "valore": "Glera 90%, Verdiso 7%, Perera 3%",
+     "mancante": false
+    },
+    {
+     "nome": "Zuccheri residui",
+     "valore": "9 g/l",
+     "mancante": false
+    },
+    {
+     "nome": "Acidità totale",
+     "valore": "6 g/l",
+     "mancante": false
+    },
+    {
+     "nome": "Pressione",
+     "valore": "5,5 bar",
+     "mancante": false
+    },
+    {
+     "nome": "Anidride solforosa totale",
+     "valore": "118 mg/l",
+     "mancante": false
+    },
+    {
+     "nome": "Provenienza delle uve",
+     "valore": "Cima Bassa e Costa del Sol (Borgo Cime)",
+     "mancante": false
+    },
+    {
+     "nome": "Metodo",
+     "valore": "Metodo Martinotti-Charmat: seconda fermentazione in autoclave, imbottigliato in magnum",
+     "mancante": false
+    },
+    {
+     "nome": "Chiusura",
+     "valore": "Tappo a fungo in sughero con gabbietta",
+     "mancante": false
+    },
+    {
+     "nome": "Temperatura di servizio",
+     "valore": "6-8 °C",
+     "mancante": false
+    },
+    {
+     "nome": "Consumo consigliato",
+     "valore": "Entro 4 anni dall'imbottigliamento",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "uve, mosto concentrato rettificato, anidride solforosa (conservante)",
+   "allergeni_testo": "Contiene solfiti",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valore energetico per 100 ml",
+    "righe": [
+     [
+      "Energia",
+      "67 kcal / 280 kJ"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in luogo fresco e al buio. Servire freddo e aprire con cautela."
   },
   {
    "sku": "V06",
@@ -104,8 +624,111 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Prosecco frizzante con il tappo a spago.",
-   "lunga": "Prosecco DOC Treviso Frizzante, quello di tutti i giorni, chiuso con il tradizionale tappo a spago. Bottiglia da 0,75 l."
+   "breve": "Prosecco DOC Treviso Frizzante con il tappo a spago, come si faceva in osteria: bollicina leggera, secco, fresco.",
+   "lunga": "Il frizzante ha una bollicina più leggera dello spumante (2 atmosfere di pressione contro oltre 5) e il tappo legato con lo spago, che si taglia per aprire. È un vino da osteria, da bere con la compagnia: profumo di mela e fiori di acacia, bocca secca e senza pretese.",
+   "abbinamenti": "Cicchetti, salumi, pizza, pasta e fagioli, polenta con formaggio.",
+   "peso_kg": 1.36,
+   "dim_cm": [
+    9,
+    9,
+    31
+   ],
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Cantina La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione",
+     "valore": "Prosecco DOC Treviso",
+     "mancante": false
+    },
+    {
+     "nome": "Tipologia",
+     "valore": "Frizzante secco",
+     "mancante": false
+    },
+    {
+     "nome": "Annata",
+     "valore": "2025",
+     "mancante": false
+    },
+    {
+     "nome": "Formato",
+     "valore": "750 ml",
+     "mancante": false
+    },
+    {
+     "nome": "Alcol",
+     "valore": "10,5 % vol",
+     "mancante": false
+    },
+    {
+     "nome": "Vitigni",
+     "valore": "Glera 100%",
+     "mancante": false
+    },
+    {
+     "nome": "Zuccheri residui",
+     "valore": "6 g/l",
+     "mancante": false
+    },
+    {
+     "nome": "Acidità totale",
+     "valore": "5,6 g/l",
+     "mancante": false
+    },
+    {
+     "nome": "Pressione",
+     "valore": "2 bar",
+     "mancante": false
+    },
+    {
+     "nome": "Anidride solforosa totale",
+     "valore": "85 mg/l",
+     "mancante": false
+    },
+    {
+     "nome": "Provenienza delle uve",
+     "valore": "Vigneti di fondovalle dell'azienda",
+     "mancante": false
+    },
+    {
+     "nome": "Metodo",
+     "valore": "Presa di spuma in autoclave, a bassa pressione",
+     "mancante": false
+    },
+    {
+     "nome": "Chiusura",
+     "valore": "Tappo a fungo con spago (legatura a mano)",
+     "mancante": false
+    },
+    {
+     "nome": "Temperatura di servizio",
+     "valore": "6-8 °C",
+     "mancante": false
+    },
+    {
+     "nome": "Consumo consigliato",
+     "valore": "Entro 12 mesi dall'imbottigliamento",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "uve, mosto concentrato rettificato, anidride solforosa (conservante)",
+   "allergeni_testo": "Contiene solfiti",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valore energetico per 100 ml",
+    "righe": [
+     [
+      "Energia",
+      "60 kcal / 251 kJ"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in luogo fresco e al buio. Servire freddo e aprire con cautela."
   },
   {
    "sku": "V07",
@@ -121,8 +744,106 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Un bianco fermo da un vitigno locale.",
-   "lunga": "Verdiso, Colli Trevigiani IGT: un vitigno della zona, bianco fermo e fresco. Bottiglia da 0,75 l."
+   "breve": "Verdiso Colli Trevigiani IGT: il vitigno locale in purezza. Bianco fermo, secco, fresco, con mela verde ed erbe aromatiche.",
+   "lunga": "Il Verdiso è un vitigno antico di queste colline, oggi poco coltivato. In purezza dà un bianco fermo, cioè senza bollicine: verde chiaro con riflessi paglierini, profumo di mela verde e di erbe aromatiche, bocca asciutta con un'acidità viva. È il vino che fa scoprire qualcosa a chi non lo conosce.",
+   "abbinamenti": "Asparagi, pesce di lago, formaggi freschi, caciotta alle erbe (F05), zuppe di verdure.",
+   "peso_kg": 1.2,
+   "dim_cm": [
+    9,
+    9,
+    31
+   ],
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Cantina La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione",
+     "valore": "Colli Trevigiani IGT Verdiso",
+     "mancante": false
+    },
+    {
+     "nome": "Tipologia",
+     "valore": "Bianco fermo secco",
+     "mancante": false
+    },
+    {
+     "nome": "Annata",
+     "valore": "2025",
+     "mancante": false
+    },
+    {
+     "nome": "Formato",
+     "valore": "750 ml",
+     "mancante": false
+    },
+    {
+     "nome": "Alcol",
+     "valore": "12 % vol",
+     "mancante": false
+    },
+    {
+     "nome": "Vitigni",
+     "valore": "Verdiso 100%",
+     "mancante": false
+    },
+    {
+     "nome": "Zuccheri residui",
+     "valore": "2,5 g/l",
+     "mancante": false
+    },
+    {
+     "nome": "Acidità totale",
+     "valore": "5,9 g/l",
+     "mancante": false
+    },
+    {
+     "nome": "Anidride solforosa totale",
+     "valore": "110 mg/l",
+     "mancante": false
+    },
+    {
+     "nome": "Provenienza delle uve",
+     "valore": "Vigneto di Verdiso (Borgo Cime)",
+     "mancante": false
+    },
+    {
+     "nome": "Metodo",
+     "valore": "Vinificazione in bianco a temperatura controllata, affinamento in acciaio sui lieviti fini",
+     "mancante": false
+    },
+    {
+     "nome": "Chiusura",
+     "valore": "Tappo a vite",
+     "mancante": false
+    },
+    {
+     "nome": "Temperatura di servizio",
+     "valore": "8-10 °C",
+     "mancante": false
+    },
+    {
+     "nome": "Consumo consigliato",
+     "valore": "Entro 2 anni dall'imbottigliamento",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "uve, anidride solforosa (conservante)",
+   "allergeni_testo": "Contiene solfiti",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valore energetico per 100 ml",
+    "righe": [
+     [
+      "Energia",
+      "67 kcal / 280 kJ"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in luogo fresco, al riparo dalla luce, in posizione orizzontale."
   },
   {
    "sku": "V08",
@@ -138,8 +859,106 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Rosso fermo da Merlot e Cabernet.",
-   "lunga": "Rosso \"Sassi\", Colli Trevigiani IGT, da uve Merlot e Cabernet. Un rosso fermo per la tavola di tutti i giorni. Bottiglia da 0,75 l."
+   "breve": "Rosso \"Sassi\" Colli Trevigiani IGT: Merlot e Cabernet Sauvignon dai terreni sassosi, due anni di affinamento. Rosso di carattere, asciutto.",
+   "lunga": "Il \"Sassi\" nasce da Merlot (65%) e Cabernet Sauvignon (35%) cresciuti sui terreni più sassosi. Dopo la fermentazione sulle bucce affina 18 mesi in botte e altri 6 in bottiglia, quindi esce due anni dopo la vendemmia. Rubino con profumo di prugna e spezie dolci, bocca asciutta con tannino morbido.",
+   "abbinamenti": "Carni rosse, brasati, polenta e funghi, formaggio Latteria vecchio (F03).",
+   "peso_kg": 1.3,
+   "dim_cm": [
+    9,
+    9,
+    31
+   ],
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Cantina La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione",
+     "valore": "Colli Trevigiani IGT Rosso",
+     "mancante": false
+    },
+    {
+     "nome": "Tipologia",
+     "valore": "Rosso fermo secco",
+     "mancante": false
+    },
+    {
+     "nome": "Annata",
+     "valore": "2023",
+     "mancante": false
+    },
+    {
+     "nome": "Formato",
+     "valore": "750 ml",
+     "mancante": false
+    },
+    {
+     "nome": "Alcol",
+     "valore": "13 % vol",
+     "mancante": false
+    },
+    {
+     "nome": "Vitigni",
+     "valore": "Merlot 65%, Cabernet Sauvignon 35%",
+     "mancante": false
+    },
+    {
+     "nome": "Zuccheri residui",
+     "valore": "2 g/l",
+     "mancante": false
+    },
+    {
+     "nome": "Acidità totale",
+     "valore": "5,4 g/l",
+     "mancante": false
+    },
+    {
+     "nome": "Anidride solforosa totale",
+     "valore": "98 mg/l",
+     "mancante": false
+    },
+    {
+     "nome": "Provenienza delle uve",
+     "valore": "Vigneti di Merlot e Cabernet Sauvignon sui terreni sassosi",
+     "mancante": false
+    },
+    {
+     "nome": "Metodo",
+     "valore": "Fermentazione sulle bucce per circa 12 giorni, 18 mesi in botti di rovere grandi, 6 mesi in bottiglia",
+     "mancante": false
+    },
+    {
+     "nome": "Chiusura",
+     "valore": "Tappo di sughero",
+     "mancante": false
+    },
+    {
+     "nome": "Temperatura di servizio",
+     "valore": "16-18 °C",
+     "mancante": false
+    },
+    {
+     "nome": "Consumo consigliato",
+     "valore": "Entro 8-10 anni dalla vendemmia",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "uve, anidride solforosa (conservante)",
+   "allergeni_testo": "Contiene solfiti",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valore energetico per 100 ml",
+    "righe": [
+     [
+      "Energia",
+      "73 kcal / 305 kJ"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in luogo fresco, al riparo dalla luce, in posizione orizzontale."
   },
   {
    "sku": "V09",
@@ -155,8 +974,106 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Vino dolce da uve appassite. Quantità limitata.",
-   "lunga": "Passito \"Sera\", Colli Trevigiani IGT. Vino dolce da dessert, in bottiglia piccola da 0,375 l. Se ne produce poco."
+   "breve": "Passito \"Sera\" Colli Trevigiani IGT: uve appassite per tre mesi e due anni in caratelli. Dolce, ambrato, mezza bottiglia. Quantità limitata.",
+   "lunga": "Per il \"Sera\" le uve di Verdiso e Glera si lasciano appassire sui graticci per circa tre mesi, finché perdono acqua e si concentrano. Il mosto riposa poi 24 mesi in caratelli (piccole botti) di rovere. Colore dorato, profumo di albicocca secca e miele, bocca dolce ma sostenuta dall'acidità. Si vende in mezza bottiglia, in quantità limitata.",
+   "abbinamenti": "Formaggi stagionati, zaeti (D01), panettone al passito (D06), pasticceria secca.",
+   "peso_kg": 0.68,
+   "dim_cm": [
+    7,
+    7,
+    25
+   ],
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Cantina La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione",
+     "valore": "Colli Trevigiani IGT Passito",
+     "mancante": false
+    },
+    {
+     "nome": "Tipologia",
+     "valore": "Passito dolce",
+     "mancante": false
+    },
+    {
+     "nome": "Annata",
+     "valore": "2022",
+     "mancante": false
+    },
+    {
+     "nome": "Formato",
+     "valore": "375 ml",
+     "mancante": false
+    },
+    {
+     "nome": "Alcol",
+     "valore": "13,5 % vol",
+     "mancante": false
+    },
+    {
+     "nome": "Vitigni",
+     "valore": "Verdiso 70%, Glera 30%",
+     "mancante": true
+    },
+    {
+     "nome": "Zuccheri residui",
+     "valore": "110 g/l",
+     "mancante": true
+    },
+    {
+     "nome": "Acidità totale",
+     "valore": "6,4 g/l",
+     "mancante": true
+    },
+    {
+     "nome": "Anidride solforosa totale",
+     "valore": "130 mg/l",
+     "mancante": false
+    },
+    {
+     "nome": "Provenienza delle uve",
+     "valore": "Uve di Verdiso e Glera selezionate nei vigneti di Borgo Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Metodo",
+     "valore": "Appassimento delle uve su graticci per circa 3 mesi, pressatura, 24 mesi in caratelli di rovere",
+     "mancante": false
+    },
+    {
+     "nome": "Chiusura",
+     "valore": "Tappo di sughero",
+     "mancante": false
+    },
+    {
+     "nome": "Temperatura di servizio",
+     "valore": "12-14 °C",
+     "mancante": false
+    },
+    {
+     "nome": "Consumo consigliato",
+     "valore": "Entro 15 anni dalla vendemmia",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "uve appassite, anidride solforosa (conservante)",
+   "allergeni_testo": "Contiene solfiti",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valore energetico per 100 ml",
+    "righe": [
+     [
+      "Energia",
+      "119 kcal / 498 kJ"
+     ]
+    ],
+    "mancante": true
+   },
+   "conservazione": "Conservare in luogo fresco, al riparo dalla luce, in posizione orizzontale."
   },
   {
    "sku": "V10",
@@ -172,8 +1089,111 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Prosecco rosé Brut millesimato.",
-   "lunga": "Prosecco DOC Rosé Brut Millesimato, rosato e secco, con l'annata in etichetta. Bottiglia da 0,75 l."
+   "breve": "Prosecco DOC Rosé Brut Millesimato: Glera con 12% di Pinot nero, rosa tenue, fragola e petali di rosa. L'annata è in etichetta.",
+   "lunga": "Il Rosé è Glera con il 12% di Pinot nero, che gli dà il colore rosa tenue. \"Millesimato\" vuol dire che tutte le uve vengono da una sola vendemmia e l'annata è scritta in etichetta. Profumo di fragolina e petali di rosa, bocca fresca e asciutta (Brut).",
+   "abbinamenti": "Aperitivo, salmone affumicato, prosciutto crudo, fragole, sushi.",
+   "peso_kg": 1.55,
+   "dim_cm": [
+    9,
+    9,
+    31
+   ],
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Cantina La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione",
+     "valore": "Prosecco DOC Rosé Millesimato",
+     "mancante": false
+    },
+    {
+     "nome": "Tipologia",
+     "valore": "Spumante Brut Rosé Millesimato",
+     "mancante": false
+    },
+    {
+     "nome": "Annata",
+     "valore": "2025",
+     "mancante": false
+    },
+    {
+     "nome": "Formato",
+     "valore": "750 ml",
+     "mancante": false
+    },
+    {
+     "nome": "Alcol",
+     "valore": "11 % vol",
+     "mancante": false
+    },
+    {
+     "nome": "Vitigni",
+     "valore": "Glera 88%, Pinot nero 12%",
+     "mancante": false
+    },
+    {
+     "nome": "Zuccheri residui",
+     "valore": "10 g/l",
+     "mancante": false
+    },
+    {
+     "nome": "Acidità totale",
+     "valore": "6 g/l",
+     "mancante": false
+    },
+    {
+     "nome": "Pressione",
+     "valore": "5,5 bar",
+     "mancante": false
+    },
+    {
+     "nome": "Anidride solforosa totale",
+     "valore": "112 mg/l",
+     "mancante": false
+    },
+    {
+     "nome": "Provenienza delle uve",
+     "valore": "Glera di fondovalle e Pinot nero dell'azienda",
+     "mancante": false
+    },
+    {
+     "nome": "Metodo",
+     "valore": "Metodo Martinotti-Charmat: seconda fermentazione in autoclave, circa 60 giorni sui lieviti",
+     "mancante": false
+    },
+    {
+     "nome": "Chiusura",
+     "valore": "Tappo a fungo in sughero con gabbietta",
+     "mancante": false
+    },
+    {
+     "nome": "Temperatura di servizio",
+     "valore": "6-8 °C",
+     "mancante": false
+    },
+    {
+     "nome": "Consumo consigliato",
+     "valore": "Entro 24 mesi dall'imbottigliamento",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "uve, mosto concentrato rettificato, anidride solforosa (conservante)",
+   "allergeni_testo": "Contiene solfiti",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valore energetico per 100 ml",
+    "righe": [
+     [
+      "Energia",
+      "65 kcal / 272 kJ"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in luogo fresco e al buio. Servire freddo e aprire con cautela."
   },
   {
    "sku": "F01",
@@ -189,8 +1209,110 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Formaggio latteria giovane, 30 giorni di stagionatura.",
-   "lunga": "Latteria fresco: formaggio dal latte delle nostre vacche, stagionato circa 30 giorni, morbido e delicato. Trancio da circa 300 g. Si conserva fino a 45 giorni dalla produzione. Va tenuto in frigorifero."
+   "breve": "Formaggio di latte vaccino stagionato 30 giorni: pasta chiara e morbida, gusto dolce di latte e burro. Il Latteria più giovane e delicato.",
+   "lunga": "Il Latteria fresco è il formaggio di tutti i giorni del caseificio: dopo 30 giorni di stagionatura ha una pasta chiara, compatta ma ancora morbida (la pasta semidura è quella che si taglia a fette senza sbriciolarsi), con un sapore dolce di latte e burro e una nota leggermente acidula. È fatto con il latte delle dodici vacche della stalla, in parte privato della panna che affiora in superficie. Si vende a tranci da circa 300 grammi, sottovuoto.",
+   "abbinamenti": "Aperitivo con il Prosecco Brut \"Cime\" (V01), polenta, verdure grigliate, panini; con il Verdiso (V07) a fine pasto.",
+   "peso_kg": 0.308,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Caseificio La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Formaggio vaccino a pasta semidura, da latte pastorizzato parzialmente scremato",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "300 g",
+     "mancante": false
+    },
+    {
+     "nome": "Tipo di latte e trattamento",
+     "valore": "Vaccino delle 12 vacche della stalla, parzialmente scremato per affioramento; pastorizzato a 72 °C per 15 secondi",
+     "mancante": false
+    },
+    {
+     "nome": "Caglio",
+     "valore": "Caglio di vitello liquido (origine animale)",
+     "mancante": false
+    },
+    {
+     "nome": "Fermenti",
+     "valore": "Fermento lattico termofilo in bustina, fornitore abituale",
+     "mancante": false
+    },
+    {
+     "nome": "Stagionatura",
+     "valore": "30 giorni",
+     "mancante": false
+    },
+    {
+     "nome": "Crosta",
+     "valore": "Naturale, non trattata, edibile",
+     "mancante": false
+    },
+    {
+     "nome": "Forma e pezzatura",
+     "valore": "Forma cilindrica di circa 7 kg, venduta in tranci da 300 g sottovuoto",
+     "mancante": false
+    },
+    {
+     "nome": "Grassi sul secco",
+     "valore": "Circa 44%",
+     "mancante": true
+    },
+    {
+     "nome": "Da consumarsi entro",
+     "valore": "45 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "LATTE vaccino pastorizzato parzialmente scremato, sale, caglio, fermenti lattici",
+   "allergeni_testo": "Latte",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "314 kcal / 1.314 kJ"
+     ],
+     [
+      "Grassi",
+      "24 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "15,5 g"
+     ],
+     [
+      "Carboidrati",
+      "0,5 g"
+     ],
+     [
+      "di cui zuccheri",
+      "0,5 g"
+     ],
+     [
+      "Fibre",
+      "0 g"
+     ],
+     [
+      "Proteine",
+      "24 g"
+     ],
+     [
+      "Sale",
+      "1,4 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in frigorifero tra 2 e 6 °C, avvolto nella carta alimentare o in un contenitore chiuso. Tirarlo fuori 20 minuti prima di servirlo."
   },
   {
    "sku": "F02",
@@ -206,8 +1328,110 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Formaggio latteria mezzano, 4 mesi di stagionatura.",
-   "lunga": "Latteria mezzano: stagionato circa 4 mesi, più saporito del fresco ma ancora tenero. Trancio da circa 300 g. Si conserva fino a 90 giorni dalla produzione."
+   "breve": "Latteria stagionato 4 mesi: pasta paglierina più asciutta e sapida del fresco, con sentore di burro fuso e noci. Da tavola e da grattugia grossa.",
+   "lunga": "Dopo quattro mesi in cella la pasta del Latteria mezzano si asciuga e si fa paglierina, il sapore diventa più pieno e sapido, con ricordi di burro fuso e di noce. Si taglia bene a scaglie e regge la cottura, quindi va bene anche sulla polenta o sulle verdure al forno. È lo stesso latte vaccino del Latteria fresco, soltanto lasciato maturare più a lungo.",
+   "abbinamenti": "Polenta, risotti mantecati, pere e miele; con il Rosso \"Sassi\" (V08) a temperatura di cantina.",
+   "peso_kg": 0.308,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Caseificio La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Formaggio vaccino a pasta semidura, da latte pastorizzato parzialmente scremato, stagionato 4 mesi",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "300 g",
+     "mancante": false
+    },
+    {
+     "nome": "Tipo di latte e trattamento",
+     "valore": "Vaccino delle 12 vacche della stalla, parzialmente scremato per affioramento; pastorizzato",
+     "mancante": false
+    },
+    {
+     "nome": "Caglio",
+     "valore": "Caglio di vitello liquido (origine animale)",
+     "mancante": false
+    },
+    {
+     "nome": "Fermenti",
+     "valore": "Fermento lattico termofilo in bustina, fornitore abituale",
+     "mancante": false
+    },
+    {
+     "nome": "Stagionatura",
+     "valore": "4 mesi (circa 120 giorni)",
+     "mancante": false
+    },
+    {
+     "nome": "Crosta",
+     "valore": "Naturale, edibile",
+     "mancante": false
+    },
+    {
+     "nome": "Forma e pezzatura",
+     "valore": "Forma cilindrica di circa 6 kg dopo la stagionatura, venduta in tranci da 300 g sottovuoto",
+     "mancante": false
+    },
+    {
+     "nome": "Grassi sul secco",
+     "valore": "Circa 43%",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi preferibilmente entro",
+     "valore": "90 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "LATTE vaccino pastorizzato parzialmente scremato, sale, caglio, fermenti lattici",
+   "allergeni_testo": "Latte",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "347 kcal / 1.452 kJ"
+     ],
+     [
+      "Grassi",
+      "26 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "17 g"
+     ],
+     [
+      "Carboidrati",
+      "0,3 g"
+     ],
+     [
+      "di cui zuccheri",
+      "0,3 g"
+     ],
+     [
+      "Fibre",
+      "0 g"
+     ],
+     [
+      "Proteine",
+      "28 g"
+     ],
+     [
+      "Sale",
+      "1,7 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in luogo fresco e asciutto, tra 8 e 12 °C. Dopo l'apertura avvolgerlo nella carta alimentare e tenerlo nel ripiano meno freddo del frigorifero."
   },
   {
    "sku": "F03",
@@ -223,8 +1447,115 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Formaggio latteria vecchio, 12 mesi di stagionatura.",
-   "lunga": "Latteria vecchio: stagionato 12 mesi, pasta compatta e sapore deciso. Trancio da circa 300 g. Si conserva fino a 180 giorni dalla produzione."
+   "breve": "Latteria stagionato 12 mesi: pasta dura, ambrata, granulosa; sapore intenso e piccante con note di frutta secca. Da tagliare a scaglie o grattugiare.",
+   "lunga": "Un anno di cella trasforma il Latteria in un formaggio a pasta dura, color ambra, con la tipica grana che si sente sotto i denti e qualche puntino bianco: sono cristalli di tirosina, un amminoacido, e segnalano una buona maturazione. Il gusto è intenso, sapido e leggermente piccante, con note di frutta secca. Si usa a scaglie a fine pasto o grattugiato su primi piatti e minestre.",
+   "abbinamenti": "Brasati e carni rosse con il Rosso \"Sassi\" (V08); a fine pasto con il Passito \"Sera\" (V09); grattugiato su risotti e minestre.",
+   "peso_kg": 0.308,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Caseificio La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Formaggio vaccino a pasta dura, da latte pastorizzato parzialmente scremato, stagionato 12 mesi",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "300 g",
+     "mancante": false
+    },
+    {
+     "nome": "Tipo di latte e trattamento",
+     "valore": "Vaccino delle 12 vacche della stalla, parzialmente scremato per affioramento; pastorizzato",
+     "mancante": false
+    },
+    {
+     "nome": "Caglio",
+     "valore": "Caglio di vitello liquido (origine animale)",
+     "mancante": false
+    },
+    {
+     "nome": "Fermenti",
+     "valore": "Fermento lattico termofilo in bustina, fornitore abituale",
+     "mancante": false
+    },
+    {
+     "nome": "Stagionatura",
+     "valore": "12 mesi (circa 365 giorni)",
+     "mancante": false
+    },
+    {
+     "nome": "Crosta",
+     "valore": "Naturale, spazzolata, dura (edibile ma non gradevole)",
+     "mancante": false
+    },
+    {
+     "nome": "Forma e pezzatura",
+     "valore": "Forma cilindrica di circa 5 kg dopo la stagionatura, venduta in tranci da 300 g sottovuoto",
+     "mancante": false
+    },
+    {
+     "nome": "Grassi sul secco",
+     "valore": "Circa 43%",
+     "mancante": false
+    },
+    {
+     "nome": "Cristalli di tirosina",
+     "valore": "Presenti, segno normale di maturazione",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi preferibilmente entro",
+     "valore": "180 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "LATTE vaccino pastorizzato parzialmente scremato, sale, caglio, fermenti lattici",
+   "allergeni_testo": "Latte",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "390 kcal / 1.632 kJ"
+     ],
+     [
+      "Grassi",
+      "29 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "19 g"
+     ],
+     [
+      "Carboidrati",
+      "0,2 g"
+     ],
+     [
+      "di cui zuccheri",
+      "0,2 g"
+     ],
+     [
+      "Fibre",
+      "0 g"
+     ],
+     [
+      "Proteine",
+      "32 g"
+     ],
+     [
+      "Sale",
+      "2 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in luogo fresco e asciutto, tra 8 e 12 °C. Dopo l'apertura avvolgerlo nella carta alimentare e tenerlo nel ripiano meno freddo del frigorifero."
   },
   {
    "sku": "F04",
@@ -240,8 +1571,115 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Formaggio affinato nelle vinacce, l'Ubriaco al Prosecco.",
-   "lunga": "L'Ubriaco al Prosecco è un formaggio affinato nelle vinacce: la crosta prende il colore dell'uva. Trancio da circa 300 g. Si conserva fino a 120 giorni dalla produzione."
+   "breve": "Formaggio affinato nelle vinacce di Glera della cantina: crosta violacea, pasta compatta, profumo di uva e sottobosco. Dolce, appena aromatico.",
+   "lunga": "L'Ubriaco nasce da una forma di Latteria giovane che, dopo due mesi, passa altri trenta giorni sotto le vinacce, cioè le bucce dell'uva Glera che restano dopo la pressatura e che arrivano dalla cantina. La crosta prende il colore del vino e cede alla pasta un profumo di uva e di sottobosco, senza coprire il sapore del latte. La pasta resta compatta e chiara, dal gusto dolce e appena aromatico. La crosta non si mangia.",
+   "abbinamenti": "Con il Passito \"Sera\" (V09) e la mostarda, oppure con il Rosso \"Sassi\" (V08); su pane tostato con una goccia di miele.",
+   "peso_kg": 0.308,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Caseificio La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Formaggio vaccino a pasta semidura, da latte pastorizzato parzialmente scremato, affinato in vinacce di uve Glera",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "300 g",
+     "mancante": false
+    },
+    {
+     "nome": "Tipo di latte e trattamento",
+     "valore": "Vaccino delle 12 vacche della stalla, parzialmente scremato per affioramento; pastorizzato",
+     "mancante": false
+    },
+    {
+     "nome": "Caglio",
+     "valore": "Caglio di vitello liquido (origine animale)",
+     "mancante": false
+    },
+    {
+     "nome": "Formaggio di base",
+     "valore": "Latteria giovane, circa 60 giorni di stagionatura prima dell'affinamento",
+     "mancante": false
+    },
+    {
+     "nome": "Affinamento in vinacce",
+     "valore": "30 giorni in cella a 10-12 °C, forme coperte da vinacce, rivoltate ogni 5 giorni",
+     "mancante": false
+    },
+    {
+     "nome": "Vinacce usate",
+     "valore": "Vinacce di uve Glera della cantina, dopo la pressatura, conservate in cella fino all'uso",
+     "mancante": false
+    },
+    {
+     "nome": "Crosta",
+     "valore": "Violacea, impregnata di vinaccia, non edibile",
+     "mancante": false
+    },
+    {
+     "nome": "Forma e pezzatura",
+     "valore": "Forma cilindrica di circa 6 kg, venduta in tranci da 300 g sottovuoto",
+     "mancante": false
+    },
+    {
+     "nome": "Grassi sul secco",
+     "valore": "Circa 46%",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi preferibilmente entro",
+     "valore": "120 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "LATTE vaccino pastorizzato parzialmente scremato, sale, caglio, fermenti lattici; crosta affinata in vinacce di uve Glera (contengono SOLFITI), non edibile",
+   "allergeni_testo": "Latte, solfiti",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "345 kcal / 1.443 kJ"
+     ],
+     [
+      "Grassi",
+      "27 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "17,5 g"
+     ],
+     [
+      "Carboidrati",
+      "0,5 g"
+     ],
+     [
+      "di cui zuccheri",
+      "0,5 g"
+     ],
+     [
+      "Fibre",
+      "0 g"
+     ],
+     [
+      "Proteine",
+      "25 g"
+     ],
+     [
+      "Sale",
+      "1,6 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in luogo fresco e asciutto, tra 8 e 12 °C. Dopo l'apertura avvolgerlo nella carta alimentare e tenerlo nel ripiano meno freddo del frigorifero. La crosta non si mangia."
   },
   {
    "sku": "F05",
@@ -257,8 +1695,115 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Caciotta fresca con erbe aromatiche.",
-   "lunga": "Caciotta alle erbe: forma da circa 400 g, fresca, con erbe aromatiche nella pasta. Si conserva fino a 30 giorni dalla produzione. Va tenuta in frigorifero."
+   "breve": "Caciotta tenera di latte vaccino con timo, maggiorana ed erba cipollina nella pasta. Si vende a forma intera da 400 g, con crosta sottile.",
+   "lunga": "La caciotta è un formaggio piccolo, a pasta tenera, che matura in poche settimane. Quella del caseificio ha nella pasta timo, maggiorana ed erba cipollina, tritate fini, che si vedono come puntini verdi nella fetta e si sentono al naso appena il formaggio viene tagliato. Il sapore è lattico e delicato, con un finale erbaceo. Si vende a forma intera da circa 400 grammi.",
+   "abbinamenti": "Con il Verdiso (V07); sul pane tiepido, nelle piadine, in insalata con pomodori; si scioglie bene sulle verdure grigliate.",
+   "peso_kg": 0.412,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Caseificio La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Formaggio vaccino a pasta semimolle, da latte pastorizzato, aromatizzato con erbe",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "400 g",
+     "mancante": false
+    },
+    {
+     "nome": "Tipo di latte e trattamento",
+     "valore": "Vaccino intero delle 12 vacche della stalla; pastorizzato",
+     "mancante": false
+    },
+    {
+     "nome": "Caglio",
+     "valore": "Caglio di vitello liquido (origine animale)",
+     "mancante": false
+    },
+    {
+     "nome": "Fermenti",
+     "valore": "Fermento lattico mesofilo in bustina, fornitore abituale",
+     "mancante": false
+    },
+    {
+     "nome": "Maturazione",
+     "valore": "Circa 15 giorni in cella a 8-10 °C",
+     "mancante": false
+    },
+    {
+     "nome": "Erbe",
+     "valore": "Timo, maggiorana, erba cipollina; circa 1% sul peso, aggiunte alla cagliata",
+     "mancante": false
+    },
+    {
+     "nome": "Crosta",
+     "valore": "Sottile, naturale, edibile",
+     "mancante": false
+    },
+    {
+     "nome": "Forma e pezzatura",
+     "valore": "Forma cilindrica da 400 g, diametro circa 10 cm, confezionata intera",
+     "mancante": false
+    },
+    {
+     "nome": "Grassi sul secco",
+     "valore": "Circa 47%",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi entro",
+     "valore": "30 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "LATTE vaccino pastorizzato, erbe aromatiche (timo, maggiorana, erba cipollina) 1%, sale, caglio, fermenti lattici",
+   "allergeni_testo": "Latte",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "312 kcal / 1.305 kJ"
+     ],
+     [
+      "Grassi",
+      "25 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "16 g"
+     ],
+     [
+      "Carboidrati",
+      "0,8 g"
+     ],
+     [
+      "di cui zuccheri",
+      "0,5 g"
+     ],
+     [
+      "Fibre",
+      "0 g"
+     ],
+     [
+      "Proteine",
+      "21 g"
+     ],
+     [
+      "Sale",
+      "1,5 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in frigorifero tra 2 e 6 °C. Dopo l'apertura avvolgerla nella carta alimentare e consumarla entro 5 giorni."
   },
   {
    "sku": "F06",
@@ -274,8 +1819,90 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Ricotta freschissima. Solo ritiro in cantina.",
-   "lunga": "Ricotta fresca da 250 g, fatta con il latte del giorno. Dura solo 6 giorni, per questo non la spediamo: si ritira in cantina. Va tenuta in frigorifero."
+   "breve": "Ricotta di siero con una parte di latte e panna: bianca, morbida, grana fine, dolce. Fresca di giornata, si vende solo in cantina e ai ristoranti vicini.",
+   "lunga": "La ricotta si ottiene riscaldando il siero, il liquido che resta dopo aver fatto il formaggio, finché le sue proteine affiorano in fiocchi. Il caseificio lo arricchisce con una parte di latte e di panna, e per questo la ricotta resta cremosa e senza sapore di siero. È bianca, morbida e dolce, e va mangiata in pochi giorni. Non si spedisce: si ritira in cantina o la ricevono i ristoranti vicini.",
+   "abbinamenti": "Miele o confettura a colazione; ravioli e gnocchi; sulle verdure ripassate; nelle torte salate.",
+   "peso_kg": 0.272,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Caseificio La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Ricotta vaccina fresca",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "250 g",
+     "mancante": false
+    },
+    {
+     "nome": "Materia prima",
+     "valore": "Siero della lavorazione di Latteria e caciotta, con aggiunta di circa 10% di latte intero e panna",
+     "mancante": false
+    },
+    {
+     "nome": "Trattamento",
+     "valore": "Riscaldamento a 85 °C con acidificazione naturale del siero, raccolta dei fiocchi con la schiumarola",
+     "mancante": false
+    },
+    {
+     "nome": "Consistenza",
+     "valore": "Morbida, grana fine, non spalmabile",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi entro",
+     "valore": "6 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "SIERO di latte vaccino, LATTE vaccino intero, PANNA vaccina, sale",
+   "allergeni_testo": "Latte",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "142 kcal / 594 kJ"
+     ],
+     [
+      "Grassi",
+      "10 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "6,5 g"
+     ],
+     [
+      "Carboidrati",
+      "3,5 g"
+     ],
+     [
+      "di cui zuccheri",
+      "3,5 g"
+     ],
+     [
+      "Fibre",
+      "0 g"
+     ],
+     [
+      "Proteine",
+      "9,5 g"
+     ],
+     [
+      "Sale",
+      "0,25 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in frigorifero tra 0 e 4 °C. Una volta aperta, consumarla entro 24 ore. Da consumarsi entro 6 giorni dalla produzione."
   },
   {
    "sku": "Y01",
@@ -295,8 +1922,105 @@
    ],
    "confezione_n": 6,
    "componenti": [],
-   "breve": "Yogurt bianco intero in vasetto da 150 g. Confezione da 6 vasetti.",
-   "lunga": "Yogurt bianco intero del nostro caseificio, in vasetto da 150 g. Si vende a confezioni da 6 vasetti. Si conserva 21 giorni dalla produzione. Spedito solo in refrigerato e non da giugno ad agosto."
+   "breve": "Yogurt intero di latte vaccino, senza zuccheri né aromi aggiunti. Cremoso, leggermente acido, in vasetto di vetro da 150 g.",
+   "lunga": "Latte intero delle vacche della stalla, fermenti lattici vivi e nient'altro. Lo yogurt matura nel vasetto, per questo ha una consistenza compatta e cremosa, e un sapore acidulo e pulito di latte. Non contiene zuccheri aggiunti. Si mangia da solo, con la frutta o con il miele, e in cucina sostituisce la panna acida.",
+   "abbinamenti": "Con miele e noci, con frutta fresca, nelle salse per carni bianche, con i cereali a colazione.",
+   "peso_kg": 0.259,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Caseificio La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Yogurt intero da latte vaccino",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "150 g",
+     "mancante": false
+    },
+    {
+     "nome": "Tipo di latte e trattamento",
+     "valore": "Vaccino intero delle 12 vacche della stalla, non standardizzato; riscaldato a 85 °C per 20 minuti, poi raffreddato",
+     "mancante": false
+    },
+    {
+     "nome": "Fermenti",
+     "valore": "Streptococcus thermophilus e Lactobacillus delbrueckii subsp. bulgaricus, coltura liofilizzata in bustina",
+     "mancante": false
+    },
+    {
+     "nome": "Grassi",
+     "valore": "Circa 3,6%",
+     "mancante": false
+    },
+    {
+     "nome": "Zuccheri aggiunti",
+     "valore": "No",
+     "mancante": false
+    },
+    {
+     "nome": "Contenitore",
+     "valore": "Vasetto in vetro da 150 g con capsula metallica a vite",
+     "mancante": false
+    },
+    {
+     "nome": "Multipli di vendita sul sito",
+     "valore": "6 vasetti",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi entro",
+     "valore": "21 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "LATTE vaccino intero pastorizzato, fermenti lattici vivi (Streptococcus thermophilus, Lactobacillus delbrueckii subsp. bulgaricus)",
+   "allergeni_testo": "Latte",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "66 kcal / 276 kJ"
+     ],
+     [
+      "Grassi",
+      "3,6 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "2,3 g"
+     ],
+     [
+      "Carboidrati",
+      "4,8 g"
+     ],
+     [
+      "di cui zuccheri",
+      "4,8 g"
+     ],
+     [
+      "Fibre",
+      "0 g"
+     ],
+     [
+      "Proteine",
+      "3,6 g"
+     ],
+     [
+      "Sale",
+      "0,1 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in frigorifero tra 2 e 4 °C. Dopo l'apertura consumarlo entro 3 giorni. Il siero in superficie è normale: basta mescolare."
   },
   {
    "sku": "Y02",
@@ -316,8 +2040,110 @@
    ],
    "confezione_n": 6,
    "componenti": [],
-   "breve": "Yogurt ai frutti di bosco, vasetto da 150 g. Confezione da 6 vasetti.",
-   "lunga": "Yogurt ai frutti di bosco del nostro caseificio, in vasetto da 150 g. Si vende a confezioni da 6 vasetti. Si conserva 21 giorni dalla produzione. Spedito solo in refrigerato e non da giugno ad agosto."
+   "breve": "Yogurt intero con frutti di bosco (mirtilli, lamponi, more) in preparazione sul fondo del vasetto. Fresco e acidulo, da 150 g.",
+   "lunga": "Sul fondo del vasetto c'è una preparazione di mirtilli, lamponi e more cotta con poco zucchero e pectina, la sostanza che dà alla frutta la consistenza di una marmellata morbida. Sopra, lo yogurt intero della casa. Si mescola e si mangia, e il frutto resta acidulo senza diventare stucchevole.",
+   "abbinamenti": "Merenda e colazione; con granola o biscotti secchi come gli Zaeti (D01); come base per un frullato.",
+   "peso_kg": 0.259,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Caseificio La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Yogurt intero da latte vaccino con preparazione di frutti di bosco",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "150 g",
+     "mancante": false
+    },
+    {
+     "nome": "Base",
+     "valore": "Yogurt bianco intero della casa (Y01), 82% del prodotto finito",
+     "mancante": false
+    },
+    {
+     "nome": "Preparazione di frutta",
+     "valore": "18% del prodotto finito: frutti di bosco 9%, zucchero 8%, pectina e succo di limone",
+     "mancante": false
+    },
+    {
+     "nome": "Zuccheri aggiunti",
+     "valore": "Sì, circa 8% sul prodotto finito, tutto nella preparazione",
+     "mancante": false
+    },
+    {
+     "nome": "Additivi",
+     "valore": "Solo pectina come gelificante, nessun colorante né conservante",
+     "mancante": false
+    },
+    {
+     "nome": "Fermenti",
+     "valore": "Streptococcus thermophilus e Lactobacillus delbrueckii subsp. bulgaricus, coltura liofilizzata in bustina",
+     "mancante": false
+    },
+    {
+     "nome": "Contenitore",
+     "valore": "Vasetto in vetro da 150 g con capsula metallica a vite",
+     "mancante": false
+    },
+    {
+     "nome": "Multipli di vendita sul sito",
+     "valore": "6 vasetti",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi entro",
+     "valore": "21 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "LATTE vaccino intero pastorizzato, preparazione di frutti di bosco 18% (zucchero, frutti di bosco 9% (mirtilli, lamponi, more), pectina, succo di limone concentrato), fermenti lattici vivi (Streptococcus thermophilus, Lactobacillus delbrueckii subsp. bulgaricus)",
+   "allergeni_testo": "Latte",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "89 kcal / 372 kJ"
+     ],
+     [
+      "Grassi",
+      "2,9 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "1,9 g"
+     ],
+     [
+      "Carboidrati",
+      "12,5 g"
+     ],
+     [
+      "di cui zuccheri",
+      "12,2 g"
+     ],
+     [
+      "Fibre",
+      "0,4 g"
+     ],
+     [
+      "Proteine",
+      "3 g"
+     ],
+     [
+      "Sale",
+      "0,1 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in frigorifero tra 2 e 4 °C. Dopo l'apertura consumarlo entro 3 giorni. Mescolare prima di mangiare."
   },
   {
    "sku": "Y03",
@@ -337,8 +2163,105 @@
    ],
    "confezione_n": 2,
    "componenti": [],
-   "breve": "Yogurt bianco intero in vasetto da 500 g. Confezione da 2 vasetti.",
-   "lunga": "Yogurt bianco intero del nostro caseificio, in vasetto da 500 g. Si vende a confezioni da 2 vasetti. Si conserva 21 giorni dalla produzione. Spedito solo in refrigerato e non da giugno ad agosto."
+   "breve": "Lo yogurt bianco intero in formato famiglia: vasetto di vetro da 500 g, senza zuccheri aggiunti. Cremoso, acidulo, buono anche in cucina.",
+   "lunga": "È lo stesso yogurt del vasetto piccolo, in formato da 500 grammi: latte intero, fermenti vivi e nessuno zucchero aggiunto. Si usa a colazione e a tavola, per condire insalate e verdure, per fare salse fresche, per impastare focacce e torte. Sul sito si compra a due vasetti per volta.",
+   "abbinamenti": "Salsa con cetriolo e menta per carni alla griglia, impasti per torte e pane, frutta di stagione, miele.",
+   "peso_kg": 0.742,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Caseificio La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Yogurt intero da latte vaccino",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "500 g",
+     "mancante": false
+    },
+    {
+     "nome": "Tipo di latte e trattamento",
+     "valore": "Vaccino intero delle 12 vacche della stalla, non standardizzato; riscaldato a 85 °C per 20 minuti, poi raffreddato",
+     "mancante": false
+    },
+    {
+     "nome": "Fermenti",
+     "valore": "Streptococcus thermophilus e Lactobacillus delbrueckii subsp. bulgaricus, coltura liofilizzata in bustina",
+     "mancante": false
+    },
+    {
+     "nome": "Grassi",
+     "valore": "Circa 3,6%",
+     "mancante": false
+    },
+    {
+     "nome": "Zuccheri aggiunti",
+     "valore": "No",
+     "mancante": false
+    },
+    {
+     "nome": "Contenitore",
+     "valore": "Vasetto in vetro da 500 g con capsula metallica a vite",
+     "mancante": false
+    },
+    {
+     "nome": "Multipli di vendita sul sito",
+     "valore": "2 vasetti",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi entro",
+     "valore": "21 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "LATTE vaccino intero pastorizzato, fermenti lattici vivi (Streptococcus thermophilus, Lactobacillus delbrueckii subsp. bulgaricus)",
+   "allergeni_testo": "Latte",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "66 kcal / 276 kJ"
+     ],
+     [
+      "Grassi",
+      "3,6 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "2,3 g"
+     ],
+     [
+      "Carboidrati",
+      "4,8 g"
+     ],
+     [
+      "di cui zuccheri",
+      "4,8 g"
+     ],
+     [
+      "Fibre",
+      "0 g"
+     ],
+     [
+      "Proteine",
+      "3,6 g"
+     ],
+     [
+      "Sale",
+      "0,1 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in frigorifero tra 2 e 4 °C. Dopo l'apertura consumarlo entro 3 giorni. Il siero in superficie è normale: basta mescolare."
   },
   {
    "sku": "Y04",
@@ -358,8 +2281,110 @@
    ],
    "confezione_n": 6,
    "componenti": [],
-   "breve": "Yogurt alla pesca, vasetto da 150 g. Confezione da 6 vasetti.",
-   "lunga": "Yogurt alla pesca del nostro caseificio, in vasetto da 150 g. Si vende a confezioni da 6 vasetti. Si conserva 21 giorni dalla produzione. Spedito solo in refrigerato e non da giugno ad agosto."
+   "breve": "Yogurt intero con pezzetti di pesca in preparazione sul fondo del vasetto. Dolce e profumato, da 150 g.",
+   "lunga": "Sul fondo del vasetto ci sono pezzetti di pesca cotti con poco zucchero e pectina, sopra lo yogurt intero della casa. Il gusto è quello di una pesca matura, morbido e dolce, con l'acidità dello yogurt a bilanciare. Si mescola prima di mangiarlo.",
+   "abbinamenti": "Colazione e merenda; con biscotti secchi come i biscotti al Prosecco (D02); come dessert leggero a fine pasto.",
+   "peso_kg": 0.259,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Caseificio La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Yogurt intero da latte vaccino con preparazione di pesca",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "150 g",
+     "mancante": false
+    },
+    {
+     "nome": "Base",
+     "valore": "Yogurt bianco intero della casa (Y01), 82% del prodotto finito",
+     "mancante": false
+    },
+    {
+     "nome": "Preparazione di frutta",
+     "valore": "18% del prodotto finito: pesca 9%, zucchero 8%, pectina e succo di limone",
+     "mancante": false
+    },
+    {
+     "nome": "Zuccheri aggiunti",
+     "valore": "Sì, circa 8% sul prodotto finito, tutto nella preparazione",
+     "mancante": false
+    },
+    {
+     "nome": "Additivi",
+     "valore": "Solo pectina come gelificante, nessun colorante né conservante",
+     "mancante": false
+    },
+    {
+     "nome": "Fermenti",
+     "valore": "Streptococcus thermophilus e Lactobacillus delbrueckii subsp. bulgaricus, coltura liofilizzata in bustina",
+     "mancante": false
+    },
+    {
+     "nome": "Contenitore",
+     "valore": "Vasetto in vetro da 150 g con capsula metallica a vite",
+     "mancante": false
+    },
+    {
+     "nome": "Multipli di vendita sul sito",
+     "valore": "6 vasetti",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi entro",
+     "valore": "21 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "LATTE vaccino intero pastorizzato, preparazione di pesca 18% (zucchero, pesca 9%, pectina, succo di limone concentrato), fermenti lattici vivi (Streptococcus thermophilus, Lactobacillus delbrueckii subsp. bulgaricus)",
+   "allergeni_testo": "Latte",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "89 kcal / 372 kJ"
+     ],
+     [
+      "Grassi",
+      "2,9 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "1,9 g"
+     ],
+     [
+      "Carboidrati",
+      "12,6 g"
+     ],
+     [
+      "di cui zuccheri",
+      "12,4 g"
+     ],
+     [
+      "Fibre",
+      "0,2 g"
+     ],
+     [
+      "Proteine",
+      "3 g"
+     ],
+     [
+      "Sale",
+      "0,1 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in frigorifero tra 2 e 4 °C. Dopo l'apertura consumarlo entro 3 giorni. Mescolare prima di mangiare."
   },
   {
    "sku": "D01",
@@ -375,8 +2400,90 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Biscotti di mais e uvetta della tradizione veneta.",
-   "lunga": "Gli zaeti sono biscotti di farina di mais e uvetta, tipici del Veneto. Confezione da 250 g. Si conservano 90 giorni."
+   "breve": "Biscotti veneti di farina gialla con uvetta e scorza di limone: friabili, burrosi, appena granulosi. Sacchetto da 250 g.",
+   "lunga": "Gli zaeti sono i biscotti tradizionali veneti a forma di piccoli rombi. Il laboratorio li fa con farina di mais fioretto, quella gialla e fine, e con burro e uvetta ammollata; per questo sono friabili e un po' granulosi, con il profumo del limone. Si mangiano così, a colazione, o inzuppati in un vino dolce.",
+   "abbinamenti": "Passito \"Sera\" (V09) a fine pasto; latte e caffè a colazione; con lo yogurt ai frutti di bosco (Y02).",
+   "peso_kg": 0.265,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Laboratorio dolci La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Biscotti secchi di farina di mais e frumento, con uvetta",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "250 g",
+     "mancante": false
+    },
+    {
+     "nome": "Farine",
+     "valore": "Farina di mais fioretto circa 28% e farina di frumento tipo 00 circa 20% sul peso dell'impasto",
+     "mancante": false
+    },
+    {
+     "nome": "Uvetta",
+     "valore": "Sultanina di fornitore, ammollata in acqua tiepida, circa 5%",
+     "mancante": false
+    },
+    {
+     "nome": "Lievitazione",
+     "valore": "Lievito chimico in polvere, nessun riposo prolungato",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi preferibilmente entro",
+     "valore": "90 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "farina di mais fioretto, FARINA di FRUMENTO tipo 00 (contiene GLUTINE), burro (LATTE vaccino), zucchero, UOVA, uvetta sultanina, lievito in polvere, scorza di limone, sale",
+   "allergeni_testo": "Glutine, uova, latte",
+   "tracce_testo": "frutta a guscio",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "421 kcal / 1.761 kJ"
+     ],
+     [
+      "Grassi",
+      "18 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "10,5 g"
+     ],
+     [
+      "Carboidrati",
+      "58 g"
+     ],
+     [
+      "di cui zuccheri",
+      "22 g"
+     ],
+     [
+      "Fibre",
+      "2,5 g"
+     ],
+     [
+      "Proteine",
+      "5,5 g"
+     ],
+     [
+      "Sale",
+      "0,3 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in luogo fresco e asciutto, nel sacchetto ben chiuso. Dopo l'apertura richiuderlo e consumarlo entro 20 giorni."
   },
   {
    "sku": "D02",
@@ -392,8 +2499,95 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Biscotti al Prosecco, ottimi con un calice.",
-   "lunga": "Biscotti preparati con il nostro Prosecco. Confezione da 200 g. Si conservano 90 giorni."
+   "breve": "Frollini al burro con una parte di Prosecco della cantina nell'impasto: croccanti fuori, sabbiosi dentro, con una nota di limone. Scatola da 200 g.",
+   "lunga": "Nell'impasto di questi frollini, accanto a burro, uova e scorza di limone, c'è un po' di Prosecco che arriva dalla cantina di casa. Il vino non si sente come alcol: lascia un sentore fresco di mela, e rende il biscotto croccante fuori e sabbioso dentro. Vanno bene con il tè, ma ancora meglio a fine pasto con un bicchiere di Prosecco.",
+   "abbinamenti": "Prosecco Extra Dry \"Quiete\" (V02); tè e caffè; con lo yogurt alla pesca (Y04) o con la ricotta fresca (F06) e un filo di miele.",
+   "peso_kg": 0.245,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Laboratorio dolci La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Biscotti frollini al vino spumante",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "200 g",
+     "mancante": false
+    },
+    {
+     "nome": "Farina",
+     "valore": "Farina di frumento tipo 00, circa 46% sul peso dell'impasto",
+     "mancante": false
+    },
+    {
+     "nome": "Prosecco",
+     "valore": "Prosecco della cantina (Toni), circa 3% sul peso dell'impasto",
+     "mancante": false
+    },
+    {
+     "nome": "Lievitazione",
+     "valore": "Lievito chimico in polvere; l'impasto riposa 12 ore in frigorifero prima della formatura",
+     "mancante": false
+    },
+    {
+     "nome": "Contenitore",
+     "valore": "Scatola in cartone alimentare con finestra, da 200 g",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi preferibilmente entro",
+     "valore": "90 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "FARINA di FRUMENTO tipo 00 (contiene GLUTINE), zucchero, burro (LATTE vaccino), UOVA, Prosecco della cantina (contiene SOLFITI), lievito in polvere, scorza di limone, sale",
+   "allergeni_testo": "Glutine, uova, latte, solfiti",
+   "tracce_testo": "frutta a guscio",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "428 kcal / 1.791 kJ"
+     ],
+     [
+      "Grassi",
+      "18 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "10,5 g"
+     ],
+     [
+      "Carboidrati",
+      "59 g"
+     ],
+     [
+      "di cui zuccheri",
+      "24 g"
+     ],
+     [
+      "Fibre",
+      "1,8 g"
+     ],
+     [
+      "Proteine",
+      "6,5 g"
+     ],
+     [
+      "Sale",
+      "0,4 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in luogo fresco e asciutto, nella scatola chiusa. Dopo l'apertura richiuderla e consumare i biscotti entro 20 giorni."
   },
   {
    "sku": "D03",
@@ -409,8 +2603,95 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Crostata fresca alla confettura.",
-   "lunga": "Crostata alla confettura, di pasta frolla, da 450 g. Si conserva 20 giorni dalla produzione."
+   "breve": "Crostata di pasta frolla al burro con confettura di albicocche fatta in laboratorio: friabile fuori, morbida dentro, 450 g.",
+   "lunga": "La pasta frolla, cioè l'impasto friabile di farina, burro, zucchero e uova, riposa una notte in frigorifero prima di essere stesa. Dentro c'è una confettura di albicocche cotta nel laboratorio, con poco più della metà di zucchero rispetto al frutto, quindi acidula quanto basta. Si serve a fette, così com'è, e dura circa tre settimane in frigorifero.",
+   "abbinamenti": "Caffè o tè a fine pasto; con una pallina di yogurt bianco intero (Y01); la mattina a colazione.",
+   "peso_kg": 0.51,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Laboratorio dolci La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Crostata con confettura di albicocche",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "450 g",
+     "mancante": false
+    },
+    {
+     "nome": "Pasta frolla",
+     "valore": "Farina 00, burro, zucchero e uova; circa 60% del peso, riposo 12 ore in frigorifero",
+     "mancante": false
+    },
+    {
+     "nome": "Confettura",
+     "valore": "Albicocche di fornitore locale, cotte in laboratorio con circa 55% di zucchero; circa 40% del peso",
+     "mancante": false
+    },
+    {
+     "nome": "Lievitazione",
+     "valore": "Nessun lievito: pasta frolla non lievitata",
+     "mancante": false
+    },
+    {
+     "nome": "Decorazione",
+     "valore": "Griglia di pasta frolla sopra la confettura, senza glassa",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi entro",
+     "valore": "20 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "confettura di albicocche 40% (albicocche, zucchero, succo di limone), FARINA di FRUMENTO tipo 00 (contiene GLUTINE), burro (LATTE vaccino), zucchero, UOVA, scorza di limone, sale",
+   "allergeni_testo": "Glutine, uova, latte",
+   "tracce_testo": "frutta a guscio",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "364 kcal / 1.523 kJ"
+     ],
+     [
+      "Grassi",
+      "13 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "7,5 g"
+     ],
+     [
+      "Carboidrati",
+      "56 g"
+     ],
+     [
+      "di cui zuccheri",
+      "33 g"
+     ],
+     [
+      "Fibre",
+      "1,5 g"
+     ],
+     [
+      "Proteine",
+      "5 g"
+     ],
+     [
+      "Sale",
+      "0,2 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in frigorifero tra 2 e 6 °C, nel vassoio chiuso. Prima di servirla lasciarla un'ora a temperatura ambiente. Dopo il taglio, coprire la parte rimasta."
   },
   {
    "sku": "D04",
@@ -429,8 +2710,100 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Pinza veneta, dolce di dicembre e gennaio.",
-   "lunga": "La pinza veneta è il dolce delle feste d'inverno. Da 500 g. Si prepara solo a dicembre e gennaio e si conserva 15 giorni."
+   "breve": "Dolce tradizionale veneto di farina gialla, fichi secchi e uvetta, con semi di finocchio. Pasta compatta e umida, si fa solo nei mesi freddi. 500 g.",
+   "lunga": "La pinza è il dolce delle feste d'inverno nel Veneto: una torta di farina di mais e di frumento con fichi secchi, uvetta e semi di finocchio, che le danno un profumo di spezie dolci. Ha una pasta compatta e umida, poco burro e molta frutta; si taglia a fette e si mangia sola o con una bevanda calda. Il laboratorio la prepara solo da dicembre a gennaio.",
+   "abbinamenti": "Passito \"Sera\" (V09) a fine pasto; latte caldo o vin brulé davanti al fuoco; con formaggio Latteria mezzano (F02).",
+   "peso_kg": 0.535,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Laboratorio dolci La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Dolce lievitato da forno con farina di mais, fichi secchi e uvetta",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "500 g",
+     "mancante": false
+    },
+    {
+     "nome": "Farine",
+     "valore": "Mais fioretto circa 20% e frumento tipo 00 circa 18% sul peso dell'impasto",
+     "mancante": false
+    },
+    {
+     "nome": "Frutta secca e uvetta",
+     "valore": "Fichi secchi circa 14%, uvetta sultanina circa 8%; fornitori diversi",
+     "mancante": false
+    },
+    {
+     "nome": "Spezie e aromi",
+     "valore": "Semi di finocchio, scorza d'arancia; nessun aroma artificiale",
+     "mancante": false
+    },
+    {
+     "nome": "Latte",
+     "valore": "Latte intero dell'azienda, circa 12%",
+     "mancante": false
+    },
+    {
+     "nome": "Lievitazione",
+     "valore": "Lievito di birra fresco; due tempi, circa 3 ore in tutto",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi entro",
+     "valore": "15 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "farina di mais fioretto, FARINA di FRUMENTO tipo 00 (contiene GLUTINE), fichi secchi, zucchero, LATTE intero, burro (LATTE vaccino), uvetta sultanina, UOVA, semi di finocchio, lievito di birra, scorza d'arancia, sale",
+   "allergeni_testo": "Glutine, uova, latte",
+   "tracce_testo": "frutta a guscio",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "347 kcal / 1.452 kJ"
+     ],
+     [
+      "Grassi",
+      "10 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "5,5 g"
+     ],
+     [
+      "Carboidrati",
+      "57 g"
+     ],
+     [
+      "di cui zuccheri",
+      "27 g"
+     ],
+     [
+      "Fibre",
+      "3,5 g"
+     ],
+     [
+      "Proteine",
+      "5,5 g"
+     ],
+     [
+      "Sale",
+      "0,25 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in frigorifero tra 2 e 8 °C, nella carta di confezionamento. Prima di servirla lasciarla un'ora a temperatura ambiente; è buona anche scaldata."
   },
   {
    "sku": "D05",
@@ -449,8 +2822,95 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Focaccia veneta di Pasqua, solo marzo e aprile.",
-   "lunga": "La focaccia veneta di Pasqua, da 750 g, si prepara solo a marzo e aprile. Si conserva 30 giorni."
+   "breve": "Focaccia dolce lievitata con lievito madre, coperta da una glassa croccante di zucchero e mandorle. Soffice, profumata di limone e vaniglia. 750 g.",
+   "lunga": "Dolce di Pasqua della tradizione veneta, a metà strada tra il pane dolce e il panettone. L'impasto lievita a lungo con il lievito madre, cioè un impasto di farina e acqua tenuto vivo e rinfrescato ogni giorno, e per questo resta soffice e profumato. Sopra c'è una glassa bianca con granella di mandorle che in cottura diventa croccante. Il laboratorio la prepara a marzo e aprile.",
+   "abbinamenti": "Prosecco Extra Dry \"Quiete\" (V02) per il brindisi; a colazione con caffè e latte; con la ricotta fresca (F06) e il miele.",
+   "peso_kg": 0.79,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Laboratorio dolci La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Focaccia dolce lievitata da forno, con glassa e mandorle",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "750 g",
+     "mancante": false
+    },
+    {
+     "nome": "Farina",
+     "valore": "Farina di frumento tipo 0, forza media-alta, circa 42% sul peso dell'impasto",
+     "mancante": false
+    },
+    {
+     "nome": "Lievito madre",
+     "valore": "Rinfrescato ogni giorno in laboratorio, tenuto da anni dal laboratorio",
+     "mancante": false
+    },
+    {
+     "nome": "Tempo di lievitazione",
+     "valore": "Circa 24 ore in tre impasti successivi",
+     "mancante": false
+    },
+    {
+     "nome": "Glassa",
+     "valore": "Zucchero e albume montato, spennellata prima della cottura",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi preferibilmente entro",
+     "valore": "30 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "FARINA di FRUMENTO tipo 0 (contiene GLUTINE), burro (LATTE vaccino), zucchero, UOVA, glassa di zucchero e albume di UOVA, granella di MANDORLE (FRUTTA A GUSCIO), lievito madre (FARINA di FRUMENTO, acqua), scorza di limone, sale, vaniglia",
+   "allergeni_testo": "Glutine, uova, latte, frutta a guscio",
+   "tracce_testo": "",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "400 kcal / 1.674 kJ"
+     ],
+     [
+      "Grassi",
+      "18 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "10 g"
+     ],
+     [
+      "Carboidrati",
+      "51 g"
+     ],
+     [
+      "di cui zuccheri",
+      "21 g"
+     ],
+     [
+      "Fibre",
+      "1,8 g"
+     ],
+     [
+      "Proteine",
+      "7,5 g"
+     ],
+     [
+      "Sale",
+      "0,45 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in luogo fresco e asciutto, lontano da fonti di calore, nel sacchetto chiuso. Dopo l'apertura richiuderla e consumarla entro 7 giorni."
   },
   {
    "sku": "D06",
@@ -469,8 +2929,100 @@
    "mesi_no_spedizione": [],
    "confezione_n": null,
    "componenti": [],
-   "breve": "Panettone al passito, solo novembre e dicembre.",
-   "lunga": "Panettone da 750 g con il nostro passito. Si prepara solo a novembre e dicembre e si conserva 45 giorni."
+   "breve": "Panettone con lievito madre, uvetta messa in ammollo nel passito \"Sera\" della cantina e scorze d'agrumi candite. Soffice, profumato, 750 g.",
+   "lunga": "Il panettone del laboratorio lievita due giorni con il lievito madre, cioè un impasto di farina e acqua tenuto vivo e rinfrescato ogni giorno, e ha una mollica alta e filante. Dentro ci sono uvetta e scorze d'arancia e di cedro candite, e una parte di passito \"Sera\", il vino dolce della cantina, che lascia un sentore di miele e uva appassita. Si fa da novembre a dicembre.",
+   "abbinamenti": "Con un calice di Passito \"Sera\" (V09); con il Prosecco Extra Dry \"Quiete\" (V02) per il brindisi; a colazione scaldato appena.",
+   "peso_kg": 0.82,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Produttore",
+     "valore": "Laboratorio dolci La Quiete nelle Cime",
+     "mancante": false
+    },
+    {
+     "nome": "Denominazione di vendita",
+     "valore": "Prodotto da forno dolce lievitato: panettone con uvetta, scorze d'agrumi candite e vino passito",
+     "mancante": false
+    },
+    {
+     "nome": "Peso netto",
+     "valore": "750 g",
+     "mancante": false
+    },
+    {
+     "nome": "Farina",
+     "valore": "Farina di frumento tipo 0, forza alta, circa 34% sul peso dell'impasto",
+     "mancante": false
+    },
+    {
+     "nome": "Passito",
+     "valore": "Passito \"Sera\" (V09) della cantina, circa 40 ml per panettone; l'uvetta si ammolla per una notte",
+     "mancante": false
+    },
+    {
+     "nome": "Canditi",
+     "valore": "Scorze d'arancia e di cedro di fornitore, senza coloranti dichiarati",
+     "mancante": false
+    },
+    {
+     "nome": "Lievito madre",
+     "valore": "Rinfrescato ogni giorno in laboratorio",
+     "mancante": false
+    },
+    {
+     "nome": "Tempo di lievitazione",
+     "valore": "Circa 36 ore in tre impasti; dopo la cottura raffreddamento capovolto per 8 ore",
+     "mancante": false
+    },
+    {
+     "nome": "Da consumarsi preferibilmente entro",
+     "valore": "45 giorni dalla produzione",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "FARINA di FRUMENTO tipo 0 (contiene GLUTINE), burro (LATTE vaccino), zucchero, uvetta sultanina, scorze d'arancia e di cedro candite, tuorli d'UOVA, passito \"Sera\" della cantina (contiene SOLFITI), lievito madre (FARINA di FRUMENTO, acqua), miele, sale, vaniglia",
+   "allergeni_testo": "Glutine, uova, latte, solfiti",
+   "tracce_testo": "frutta a guscio",
+   "nutrizione": {
+    "titolo": "Valori nutrizionali medi per 100 g",
+    "righe": [
+     [
+      "Energia",
+      "383 kcal / 1.602 kJ"
+     ],
+     [
+      "Grassi",
+      "15 g"
+     ],
+     [
+      "di cui acidi grassi saturi",
+      "8,5 g"
+     ],
+     [
+      "Carboidrati",
+      "54 g"
+     ],
+     [
+      "di cui zuccheri",
+      "27 g"
+     ],
+     [
+      "Fibre",
+      "2 g"
+     ],
+     [
+      "Proteine",
+      "7 g"
+     ],
+     [
+      "Sale",
+      "0,4 g"
+     ]
+    ],
+    "mancante": false
+   },
+   "conservazione": "Conservare in luogo fresco e asciutto, lontano da fonti di calore, nel suo sacchetto. Dopo l'apertura richiuderlo e consumarlo entro 10 giorni."
   },
   {
    "sku": "C01",
@@ -489,8 +3041,28 @@
     "V01",
     "V02"
    ],
-   "breve": "Due bottiglie per un brindisi: Brut e Extra Dry.",
-   "lunga": "Confezione regalo \"Brindisi\": una bottiglia di Valdobbiadene Prosecco Superiore DOCG Brut \"Cime\" e una di Extra Dry \"Quiete\"."
+   "breve": "Due bottiglie di Valdobbiadene Prosecco Superiore DOCG: il Brut \"Cime\" e l'Extra Dry \"Quiete\", per provare la differenza tra un Brut e un Extra Dry.",
+   "lunga": "Nella scatola ci sono le due bottiglie più bevute della cantina: il Brut \"Cime\", asciutto e fresco, e l'Extra Dry \"Quiete\", appena più morbido. Si aprono insieme per capire la differenza, o si regalano a chi ama il Prosecco. La scatola è pensata per viaggiare: le bottiglie stanno ferme e separate.",
+   "abbinamenti": "",
+   "peso_kg": 3.42,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Contenuto",
+     "valore": "Valdobbiadene Prosecco Superiore DOCG Brut \"Cime\"; Valdobbiadene Prosecco Superiore DOCG Extra Dry \"Quiete\"",
+     "mancante": false
+    },
+    {
+     "nome": "Imballo",
+     "valore": "Scatola in cartone ondulato con divisorio e due alveoli per bottiglie da 0,75 l",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "",
+   "allergeni_testo": "Solfiti",
+   "tracce_testo": "",
+   "nutrizione": null,
+   "conservazione": ""
   },
   {
    "sku": "C02",
@@ -511,8 +3083,28 @@
     "F04",
     "D02"
    ],
-   "breve": "Un vino, due formaggi e dei biscotti per una tavola di festa.",
-   "lunga": "Confezione regalo \"Tavola delle Cime\": Valdobbiadene DOCG Extra Brut \"Rive Alte\", Latteria vecchio, Ubriaco al Prosecco e Biscotti al Prosecco. Contiene formaggi: si spedisce solo in Italia."
+   "breve": "Un Extra Brut \"Rive Alte\", un Latteria vecchio, un Ubriaco al Prosecco e i biscotti al Prosecco: un piccolo aperitivo di casa in una cassetta.",
+   "lunga": "La cassetta mette insieme vino, formaggi e un biscotto, tutti fatti a Borgo Cime. Il Rive Alte, il più minerale della cantina, si abbina al Latteria vecchio e all'Ubriaco, due formaggi di sapore deciso. I biscotti al Prosecco chiudono la serata, con un bicchiere dello stesso vino.",
+   "abbinamenti": "",
+   "peso_kg": 2.941,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Contenuto",
+     "valore": "Valdobbiadene DOCG Extra Brut \"Rive Alte\"; Latteria vecchio (12 mesi); Ubriaco al Prosecco; Biscotti al Prosecco",
+     "mancante": false
+    },
+    {
+     "nome": "Imballo",
+     "valore": "Cassetta in cartone ondulato con carta paglia, divisori per la bottiglia e vano separato per formaggi e biscotti",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "",
+   "allergeni_testo": "Solfiti, latte, glutine, uova",
+   "tracce_testo": "frutta a guscio",
+   "nutrizione": null,
+   "conservazione": ""
   },
   {
    "sku": "C03",
@@ -536,8 +3128,29 @@
     "D06",
     "D01"
    ],
-   "breve": "Il regalo di Natale: spumante, passito, panettone e zaeti.",
-   "lunga": "Confezione regalo \"Natale in Quiete\": Brut \"Cime\", Passito \"Sera\", Panettone al passito e Zaeti. Disponibile solo a novembre e dicembre."
+   "breve": "Brut \"Cime\", Passito \"Sera\", panettone al passito e Zaeti: un regalo di Natale con la tavola delle feste del colle, da novembre a dicembre.",
+   "lunga": "Dentro ci sono un Prosecco per il brindisi, il Passito \"Sera\" per il dolce, il panettone che il passito lo ha dentro, e gli Zaeti, i biscotti veneti di mais e uvetta. È la scatola dei regali di fine anno, preparata a mano, con nastro e carta paglia. Si trova solo in stagione, nei mesi di novembre e dicembre.",
+   "abbinamenti": "",
+   "peso_kg": 3.835,
+   "dim_cm": null,
+   "attributi": [
+    {
+     "nome": "Contenuto",
+     "valore": "Valdobbiadene Prosecco Superiore DOCG Brut \"Cime\"; Passito \"Sera\" Colli Trevigiani IGT; Panettone al passito; Zaeti",
+     "mancante": false
+    },
+    {
+     "nome": "Imballo",
+     "valore": "Scatola rigida con coperchio, nastro, carta paglia e sede sagomata per le due bottiglie",
+     "mancante": false
+    }
+   ],
+   "ingredienti": "",
+   "allergeni_testo": "Solfiti, glutine, uova, latte",
+   "tracce_testo": "frutta a guscio",
+   "nutrizione": null,
+   "conservazione": ""
   }
- ]
+ ],
+ "annata_a": 2025
 }
