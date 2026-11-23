@@ -275,15 +275,30 @@ $footers = get_block_templates(array('area' => 'footer'), 'wp_template_part');
 foreach ($footers as $f) {
     $id = quiete_tpl('wp_template_part', $f->slug, 'Footer', $footer_blocks, $tema, 'footer');
 }
-/* il banner "Sweet Elegant Fine Winery" sta dentro la parte "Header With Banner": la sostituisco con la sola riga di intestazione (logo, titolo, menu, carrello) */
+/* il banner "Sweet Elegant Fine Winery" sta dentro la parte "Header With Banner": la sostituisco con un'intestazione mia (logo, titolo, menu, account, carrello) */
 $hdr = 'header';
-$base = get_block_template($tema . '//primary-header', 'wp_template_part');
-if (!$base) { $base = get_block_template($tema . '//header', 'wp_template_part'); }
-if ($base) {
-    foreach (get_block_templates(array('area' => 'header'), 'wp_template_part') as $h) {
-        if (preg_match('/banner|hero/i', $h->slug)) {
-            quiete_tpl('wp_template_part', $h->slug, 'Header', $base->content, $tema, 'header');
-        }
+$u = function ($path) { return esc_url(home_url($path)); };
+$voci = array('Home' => '/', 'Negozio' => '/shop/', 'Chi siamo' => '/chi-siamo/', 'Contatti' => '/contatti/', 'Spedizioni e resi' => '/spedizioni-e-resi/');
+$nav = '';
+foreach ($voci as $et => $pa) {
+    $nav .= '<!-- wp:navigation-link {"label":"' . $et . '","type":"custom","url":"' . $u($pa) . '","kind":"custom","isTopLevelLink":true} /-->';
+}
+$header_blocks = '<!-- wp:group {"style":{"spacing":{"padding":{"top":"14px","bottom":"14px","left":"24px","right":"24px"}},"color":{"background":"#ffffff"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->'
+ . '<div class="wp-block-group has-background" style="background-color:#ffffff;padding:14px 24px">'
+ . '<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} --><div class="wp-block-group">'
+ . '<!-- wp:site-logo {"width":150} /-->'
+ . '<!-- wp:group {"layout":{"type":"constrained"}} --><div class="wp-block-group">'
+ . '<!-- wp:site-title {"level":0,"style":{"color":{"text":"#4f1420"},"typography":{"fontSize":"26px"}}} /-->'
+ . '<!-- wp:site-tagline {"style":{"color":{"text":"#7a6658"},"typography":{"fontSize":"14px"}}} /-->'
+ . '</div><!-- /wp:group --></div><!-- /wp:group -->'
+ . '<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} --><div class="wp-block-group">'
+ . '<!-- wp:navigation {"overlayMenu":"mobile","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} -->' . $nav . '<!-- /wp:navigation -->'
+ . '<!-- wp:woocommerce/customer-account {"displayStyle":"icon_only","iconClass":"wc-block-customer-account__account-icon"} /-->'
+ . '<!-- wp:woocommerce/mini-cart /-->'
+ . '</div><!-- /wp:group --></div><!-- /wp:group -->';
+foreach (get_block_templates(array('area' => 'header'), 'wp_template_part') as $h) {
+    if (preg_match('/banner|hero|^header$|primary/i', $h->slug)) {
+        quiete_tpl('wp_template_part', $h->slug, 'Header', $header_blocks, $tema, 'header');
     }
 }
 $ftr = $footers ? $footers[0]->slug : 'footer';
