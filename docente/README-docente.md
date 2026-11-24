@@ -4,7 +4,7 @@ Un negozio WooCommerce finto, che gira nel browser. Ogni corsista ha la sua copi
 
 ## Due versioni
 - **Pulito**: 29 prodotti corretti, 15 ordini e 15 clienti di novembre 2026 (dal dataset del caso).
-- **Con errori**: uguale, con 10 errori piantati (7 sui prodotti, 3 sulle foto del sito) e alcuni campi tecnici «Da verificare». Vedi `chiave-docente-sporco.md`.
+- **Con errori**: uguale, con 11 errori piantati (7 sui prodotti, 4 sulle foto del sito) e alcuni campi tecnici «Da verificare». Vedi `chiave-docente-sporco.md`.
 
 ## Contenuti del negozio
 - Categorie: Vini, Formaggi, Yogurt, Dolci, Confezioni regalo. Prodotti con codice (SKU) V01…C03 del catalogo del caso.

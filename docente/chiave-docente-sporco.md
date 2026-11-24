@@ -1,7 +1,7 @@
 # Chiave docente — negozio La Quiete "con errori"
 
-Il negozio "sporco" è identico a quello pulito, tranne 10 errori piantati (7 sui prodotti, 3 sulle foto del sito) e 12 campi tecnici lasciati «Da verificare» (dati mancanti, vedi la sezione sotto). Non darla ai corsisti.
-Come si vede: per i prodotti, **Prodotti → Tutti i prodotti** (colonne prezzo, categorie, scorta) e la scheda di ogni prodotto; per le foto, le pagine **Home** e **Chi siamo** e la **Libreria media**.
+Il negozio "sporco" è identico a quello pulito, tranne 11 errori piantati (7 sui prodotti, 4 sulle foto del sito) e 12 campi tecnici lasciati «Da verificare» (dati mancanti, vedi la sezione sotto). Non darla ai corsisti.
+Come si vede: per i prodotti, **Prodotti → Tutti i prodotti** (colonne prezzo, categorie, scorta) e la scheda di ogni prodotto; per le foto, le pagine **Home**, **Chi siamo** e **Agriturismo** e la **Libreria media**.
 
 | # | Prodotto | Errore piantato | Dove si vede | Correzione |
 |---|---|---|---|---|
@@ -19,8 +19,9 @@ Le foto (luoghi e persone) sono generate con AI. Nel pulito sono compresse (circ
 | # | Dove | Errore piantato | Come si scopre | Correzione |
 |---|---|---|---|---|
 | 8 | Home, foto di apertura (Borgo Cime dall'alto) | Caricata l'**originale non compresso**: circa 1 MB per una foto larga 1376 px | Libreria media → dettagli del file (dimensione del file); oppure gli strumenti del browser (scheda Rete) o un test di velocità della pagina | Comprimere (JPEG di qualità 80 circa: da 1 MB a circa 250 KB, a occhio non cambia nulla) e sostituirla |
-| 9 | Tutte le foto del sito (Home, Chi siamo, Contatti, Spedizioni e resi) | **Nessun testo alternativo** (l'attributo alt, la descrizione che leggono i lettori di schermo e i motori di ricerca). In più i file hanno nomi muti (`IMG_4100.jpg` …) | Libreria media → campo «Testo alternativo» vuoto; nell'editor, blocco immagine → «Testo alternativo»; un controllo di accessibilità | Una frase che descrive cosa si vede, per ogni foto (vedi i testi del pulito o `dati/immagini-sito.json`); nomi dei file che dicono cosa c'è dentro |
+| 9 | Tutte le foto del sito (Home, Chi siamo, Agriturismo, Contatti, Spedizioni e resi) | **Nessun testo alternativo** (l'attributo alt, la descrizione che leggono i lettori di schermo e i motori di ricerca). In più i file hanno nomi muti (`IMG_4100.jpg` …) | Libreria media → campo «Testo alternativo» vuoto; nell'editor, blocco immagine → «Testo alternativo»; un controllo di accessibilità | Una frase che descrive cosa si vede, per ogni foto (vedi i testi del pulito o `dati/immagini-sito.json`); nomi dei file che dicono cosa c'è dentro |
 | 10 | Chi siamo, foto di gruppo in cortile | Didascalia **«Il nostro team.»**, ma nella foto ci sono anche **ospiti dell'agriturismo, tra cui un ragazzino**, pubblicati come se fossero dipendenti e senza dire nulla del consenso | Guardare la foto con le schede dei personaggi accanto: la ragazza con la camicetta, il ragazzino e l'anziano seduto non sono nel team | Per le persone riconoscibili serve il consenso (una liberatoria); per un minore lo firmano i genitori. Senza consenso: un'altra foto, oppure tagliare o sfocare. In ogni caso didascalia vera: «Il team, con alcuni ospiti dell'agriturismo che ci hanno dato il permesso di pubblicare la foto.» |
+| 11 | Chi siamo, "Le persone": ritratto di Nicola | Sul coperchio del portatile si vede il **logo di un marchio reale** | Guardare le foto del team con attenzione (anche ingrandendo) | Una foto pubblicitaria non deve mostrare marchi di altri come se ci fosse un legame: ritoccare (coprire o sfocare il logo) o cambiare foto. Nel pulito il logo è già tolto |
 
 ## Campi tecnici «Da verificare» (dati mancanti)
 Nella scheda del prodotto, tab **Informazioni aggiuntive** (e valore energetico in descrizione), questi campi mostrano «Da verificare». Nel negozio pulito hanno il valore giusto, che è anche la correzione attesa (viene dalla scheda prodotto della Bibbia, `bibbia/08-schede-prodotto.md`, dove lo stato è *Mancante*). Non sono errori di valore: sono dati che l'azienda non ha in anagrafica.

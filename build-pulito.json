@@ -376,10 +376,162 @@
   },
   {
    "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/L06.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/L06.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/L07.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/L07.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/L08.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/L08.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/L10.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/L10.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/L11.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/L11.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/L14.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/L14.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/L18.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/L18.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/L19.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/L19.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/L20.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/L20.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/R-bruno.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/R-bruno.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/R-dario.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/R-dario.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/R-elena.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/R-elena.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/R-graziella.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/R-graziella.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/R-ivano.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/R-ivano.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/R-marta.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/R-marta.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/R-nicola.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/R-nicola.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/R-sandro.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/R-sandro.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/R-toni.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/R-toni.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
    "path": "/wordpress/wp-content/quiete-dati/img-sito/originali/L02.jpg",
    "data": {
     "resource": "url",
     "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/originali/L02.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/originali/R-nicola.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/originali/R-nicola.jpg"
    }
   },
   {

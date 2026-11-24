@@ -265,13 +265,13 @@ foreach ($ordini as $o) {
 }
 
 /* ---------- 8a. Foto del sito (luoghi e persone, generate con AI) ---------- */
-/* dati in quiete-dati/immagini-sito.json, file in quiete-dati/img-sito/. Nello sporco: niente testo alternativo (errore 9) e foto di apertura della Home non compressa (errore 8) */
+/* dati in quiete-dati/immagini-sito.json, file in quiete-dati/img-sito/. Nello sporco: le foto in img-sito/originali/ al posto di quelle pronte (errore 8: L02 non compressa; errore 11: ritratto di Nicola col logo di un marchio reale) e niente testo alternativo (errore 9) */
 $foto = array();
 $fs_json = $dir . 'immagini-sito.json';
 $fs = file_exists($fs_json) ? json_decode(file_get_contents($fs_json), true) : array('immagini' => array());
 foreach ($fs['immagini'] as $cod => $x) {
     $file = $dir . 'img-sito/' . $cod . '.jpg';
-    if ($variante === 'sporco' && $cod === 'L02' && file_exists($dir . 'img-sito/originali/L02.jpg')) { $file = $dir . 'img-sito/originali/L02.jpg'; }
+    if ($variante === 'sporco' && file_exists($dir . 'img-sito/originali/' . $cod . '.jpg')) { $file = $dir . 'img-sito/originali/' . $cod . '.jpg'; }
     if (!file_exists($file)) { continue; }
     $tmp = wp_tempnam($cod . '.jpg');
     copy($file, $tmp);
@@ -293,7 +293,28 @@ $img = function ($cod, $didascalia = true, $link = '') use ($foto) {
     $attr = array('id' => $f['id'], 'sizeSlug' => 'large', 'linkDestination' => $link ? 'custom' : 'none');
     return '<!-- wp:image ' . wp_json_encode($attr) . ' --><figure class="wp-block-image size-large">' . $tag . $cap . '</figure><!-- /wp:image -->';
 };
-if (isset($foto['L04'], $cat_id['Vini'])) { update_term_meta($cat_id['Vini'], 'thumbnail_id', $foto['L04']['id']); }
+$foto_cat = array('Vini' => 'L04', 'Formaggi' => 'L11', 'Yogurt' => 'L07', 'Dolci' => 'L14', 'Confezioni regalo' => 'L10');
+foreach ($foto_cat as $nome_cat => $cod) {
+    if (isset($foto[$cod], $cat_id[$nome_cat])) { update_term_meta($cat_id[$nome_cat], 'thumbnail_id', $foto[$cod]['id']); }
+}
+/* due o tre immagini affiancate */
+$affianca = function ($blocchi) {
+    $c = '<!-- wp:columns --><div class="wp-block-columns">';
+    foreach ($blocchi as $b) { $c .= '<!-- wp:column --><div class="wp-block-column">' . $b . '</div><!-- /wp:column -->'; }
+    return $c . '</div><!-- /wp:columns -->';
+};
+/* griglia del team, 3 per riga, con nome e ruolo */
+$persone = '';
+$righe = array_chunk(array('bruno', 'dario', 'elena', 'graziella', 'ivano', 'marta', 'nicola', 'sandro', 'toni'), 3);
+foreach ($righe as $riga) {
+    $col = array();
+    foreach ($riga as $n) {
+        $k = 'R-' . $n;
+        if (!isset($foto[$k], $fs['immagini'][$k])) { continue; }
+        $col[] = $img($k, false) . '<!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center"><strong>' . esc_html($fs['immagini'][$k]['nome']) . '</strong><br>' . esc_html($fs['immagini'][$k]['ruolo']) . '</p><!-- /wp:paragraph -->';
+    }
+    if ($col) { $persone .= $affianca($col); }
+}
 $par = function ($t) { return '<!-- wp:paragraph --><p>' . $t . '</p><!-- /wp:paragraph -->'; };
 $tit = function ($t) { return '<!-- wp:heading --><h2 class="wp-block-heading">' . $t . '</h2><!-- /wp:heading -->'; };
 $avviso = $par('<strong>Attenzione:</strong> questo è un negozio di prova creato per i corsi di StyleSoft dML. L\'azienda, i prodotti, i prezzi e i clienti sono inventati, e le foto sono generate con AI.');
@@ -308,8 +329,27 @@ $pagine = array(
         . $tit('Il vigneto')
         . $par('Quattordici ettari, nove dei quali a Glera per il Valdobbiadene DOCG. I filari stanno su pendenze così forti che quasi tutto si lavora a mano, vendemmia compresa. Ne escono circa 110.000 bottiglie l\'anno.')
         . $img('L04')
-        . $tit('La stalla, il caseificio, l\'agriturismo')
-        . $par('Dodici vacche danno il latte per i nostri formaggi e yogurt, che Marta lavora ogni mattina a pochi metri dalla stalla. L\'agriturismo ha otto camere e una sala da 45 coperti: è aperto da metà marzo all\'Epifania, con cene il venerdì, il sabato e la domenica e degustazioni su prenotazione.')
+        . $tit('La cantina')
+        . $par('La cantina ha due anime. Nella sala vasche, tutta in acciaio, nasce il Prosecco: le bollicine si fanno in autoclave, grandi serbatoi chiusi che tengono la pressione. Nella bottaia, sotto la volta in mattoni, riposano il passito e i vini fermi. Le degustazioni si fanno su prenotazione, nella sala accanto alla bottaia.')
+        . $affianca(array($img('L08'), $img('L10')))
+        . $tit('La stalla, il caseificio, i dolci')
+        . $par('Dodici vacche danno il latte per i nostri formaggi e yogurt, che Marta lavora ogni mattina a pochi metri dalla stalla. Accanto c\'è il laboratorio dei dolci, nato per le colazioni dell\'agriturismo.')
+        . $affianca(array($img('L07'), $img('L11'), $img('L14')))
+        . $tit('L\'agriturismo')
+        . $par('Otto camere e una sala da 45 coperti, aperti da metà marzo all\'Epifania. Tutto nella pagina <a href="' . esc_url(home_url('/agriturismo/')) . '">Agriturismo</a>.')
+        . $tit('Le persone')
+        . $persone
+        . $avviso,
+    'Agriturismo' => $img('L06')
+        . $par('L\'agriturismo apre nel 2008: prima la sala, poi le camere. Oggi le camere sono otto, con 18 posti letto, e la sala ha 45 coperti. Siamo aperti da metà marzo all\'Epifania; si cena il venerdì, il sabato e la domenica.')
+        . $tit('La sala e la cucina')
+        . $par('In sala c\'è Elena; in cucina Luisa, con le verdure dell\'orto, i nostri formaggi e, naturalmente, il nostro vino.')
+        . $affianca(array($img('L18'), $img('L20')))
+        . $tit('Le camere')
+        . $par('Camere semplici, con la finestra sulle vigne. La colazione la prepara il nostro laboratorio dei dolci.')
+        . $img('L19')
+        . $tit('Prenotare')
+        . $par('Per una camera, una cena o una degustazione scriveteci a info@quietenellecime.example o chiamate lo 0499 55 01 001.')
         . $avviso,
     'Spedizioni e resi' => $par('Italia: 9,90 €, gratis sopra 89 €. I prodotti refrigerati hanno un supplemento di 6,00 € e partono solo il lunedì e il martedì.')
         . $par('Austria e Germania: solo vino e dolci non refrigerati. Formaggi e yogurt si spediscono solo in Italia. La ricotta fresca si ritira in cantina.')
@@ -338,6 +378,19 @@ $shop_id = wc_get_page_id('shop');
 if ($shop_id) { wp_update_post(array('ID' => $shop_id, 'post_title' => 'Negozio')); }
 update_option('sidebars_widgets', array('wp_inactive_widgets' => array(), 'sidebar-1' => array(), 'array_version' => 3));
 /* ---------- 9. Home, footer e aspetto (tema a blocchi Drinkify Lite) ---------- */
+$home_categorie = '';
+$tess = array();
+foreach ($foto_cat as $nome_cat => $cod) {
+    if (!isset($foto[$cod], $cat_id[$nome_cat])) { continue; }
+    $link = get_term_link($cat_id[$nome_cat], 'product_cat');
+    if (is_wp_error($link)) { continue; }
+    $tess[] = $img($cod, false, $link) . '<!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center"><a href="' . esc_url($link) . '"><strong>' . esc_html($nome_cat) . '</strong></a></p><!-- /wp:paragraph -->';
+}
+if ($tess) {
+    $home_categorie = '<!-- wp:heading {"textAlign":"center"} --><h2 class="wp-block-heading has-text-align-center">Le categorie</h2><!-- /wp:heading -->'
+        . $affianca($tess)
+        . '<!-- wp:spacer {"height":"40px"} --><div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->';
+}
 $cop = isset($foto['L02']) ? $foto['L02'] : null;
 $cop_attr = $cop ? '"url":"' . esc_url($cop['full']) . '","id":' . $cop['id'] . ',"alt":"' . esc_attr($cop['alt']) . '","dimRatio":50,' : '';
 $cop_img = $cop ? '<img class="wp-block-cover__image-background wp-image-' . $cop['id'] . '" alt="' . esc_attr($cop['alt']) . '" src="' . esc_url($cop['full']) . '" data-object-fit="cover"/>' : '';
@@ -349,6 +402,7 @@ $home_blocks = '<!-- wp:cover {' . $cop_attr . '"customOverlayColor":"#4f1420","
  . '<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} --><div class="wp-block-buttons"><!-- wp:button --><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="' . esc_url(get_permalink(wc_get_page_id('shop'))) . '">Vai al negozio</a></div><!-- /wp:button --></div><!-- /wp:buttons -->'
  . '</div></div><!-- /wp:cover -->'
  . '<!-- wp:spacer {"height":"40px"} --><div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->'
+ . $home_categorie
  . (isset($foto['L04'], $foto['IN02'], $foto['IN01'])
     ? '<!-- wp:heading {"textAlign":"center"} --><h2 class="wp-block-heading has-text-align-center">Chi siamo</h2><!-- /wp:heading -->'
       . '<!-- wp:columns --><div class="wp-block-columns">'
@@ -387,7 +441,7 @@ foreach ($footers as $f) {
 /* il banner "Sweet Elegant Fine Winery" sta dentro la parte "Header With Banner": la sostituisco con un'intestazione mia (logo, titolo, menu, account, carrello) */
 $hdr = 'header';
 $u = function ($path) { return esc_url(home_url($path)); };
-$voci = array('Home' => '/', 'Negozio' => '/shop/', 'Chi siamo' => '/chi-siamo/', 'Contatti' => '/contatti/', 'Spedizioni e resi' => '/spedizioni-e-resi/');
+$voci = array('Home' => '/', 'Negozio' => '/shop/', 'Chi siamo' => '/chi-siamo/', 'Agriturismo' => '/agriturismo/', 'Contatti' => '/contatti/', 'Spedizioni e resi' => '/spedizioni-e-resi/');
 $nav = '';
 foreach ($voci as $et => $pa) {
     $nav .= '<!-- wp:navigation-link {"label":"' . $et . '","type":"custom","url":"' . $u($pa) . '","kind":"custom","isTopLevelLink":true} /-->';
@@ -461,7 +515,8 @@ foreach (array('product-sidebar', 'sidebar') as $sp) { quiete_tpl('wp_template_p
 wp_update_custom_css_post(
     ".wp-block-site-logo img{width:170px!important;height:auto!important}\n"
   . ".woocommerce-store-notice,.wc-block-components-notice-banner.is-info{background:#4f1420!important;color:#fff!important}\n"
-  . ".woocommerce-store-notice a{color:#f1dc8a!important}",
+  . ".woocommerce-store-notice a{color:#f1dc8a!important}\n"
+  . "h1,h2,h3,h4,.wp-block-post-title,.wp-block-query-title,.wp-block-button__link{text-transform:none!important}",
     array('stylesheet' => $tema)
 );
 update_option('show_on_front', 'page');

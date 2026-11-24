@@ -1,5 +1,5 @@
 {
-  "_nota": "Foto del sito (non dei prodotti). Codici come in bibbia/09-luoghi-e-immagini.md del repo corsi_quiete_caso. Immagini sintetizzate con AI. File in immagini-sito/ (compressi) e immagini-sito/originali/ (L02 non compresso, usato solo dallo sporco).",
+  "_nota": "Foto del sito (non dei prodotti). Codici delle location come in bibbia/09-luoghi-e-immagini.md del repo corsi_quiete_caso; R-<nome> = ritratti del team. Immagini sintetizzate con AI. File in immagini-sito/ (pronti per il pulito) e immagini-sito/originali/ (come arrivati, usati solo dallo sporco: L02 non compresso, R-nicola con il logo di un marchio reale).",
   "immagini": {
     "L02": {
       "titolo": "Borgo Cime dall'alto",
@@ -26,6 +26,114 @@
       "titolo": "La famiglia a tavola",
       "alt": "Bruno, Luisa, Elena e Nicola Bressanel a pranzo nella cucina di casa, con vino, pane e formaggi.",
       "didascalia": "La domenica a tavola: Bruno e Luisa con Elena e Nicola."
+    },
+    "L06": {
+      "titolo": "La terrazza dell'agriturismo",
+      "alt": "La terrazza dell'agriturismo sotto il pergolato di vite, con i tavoli a quadretti rossi e la vista sulle colline.",
+      "didascalia": "La terrazza sotto il pergolato: d'estate si cena qui."
+    },
+    "L18": {
+      "titolo": "La sala da 45 coperti",
+      "alt": "La sala dell'agriturismo apparecchiata, con le travi in legno, le sedie in legno curvato, il pavimento alla veneziana e il grande focolare in fondo.",
+      "didascalia": "La sala, con il focolare: 45 coperti."
+    },
+    "L19": {
+      "titolo": "Una delle otto camere",
+      "alt": "Una camera dell'agriturismo con il letto in legno, la coperta di lana, un fiore sul comodino e la finestra aperta sulle vigne.",
+      "didascalia": "Una delle otto camere: il fiore sul comodino lo cambia Elena."
+    },
+    "L20": {
+      "titolo": "La cucina dell'agriturismo",
+      "alt": "La cucina dell'agriturismo con il paiolo di rame sul fuoco, le pentole appese, il radicchio, i fagiolini e i pomodori dell'orto.",
+      "didascalia": "La cucina di Luisa: il paiolo per la polenta è sempre sul fuoco."
+    },
+    "L08": {
+      "titolo": "La bottaia",
+      "alt": "La bottaia sotto la volta in mattoni, con le botti di rovere ai lati, una lanterna accesa e un tavolino con due calici e un quaderno aperto.",
+      "didascalia": "La bottaia, la parte più vecchia della cantina: qui riposano il passito e i vini fermi."
+    },
+    "L10": {
+      "titolo": "La sala degustazione",
+      "alt": "La sala degustazione con il muro in pietra, un tavolo apparecchiato con calici, pane e formaggio, e la finestra sui vigneti.",
+      "didascalia": "La sala degustazione: si prenota, e si assaggia con vista sulle vigne."
+    },
+    "L07": {
+      "titolo": "Il prato sotto il fienile",
+      "alt": "Il prato in pendenza sotto il fienile con le aperture in mattoni, un abbeveratoio in pietra e uno steccato di legno, con le Prealpi sullo sfondo.",
+      "didascalia": "Il prato sotto il fienile, dove pascolano le nostre vacche."
+    },
+    "L11": {
+      "titolo": "Il caseificio",
+      "alt": "Il caseificio con la caldaia in acciaio, le fuscelle di formaggio fresco che sgocciolano sul tavolo e il registro delle temperature.",
+      "didascalia": "Il caseificio, a pochi metri dalla stalla."
+    },
+    "L14": {
+      "titolo": "Il laboratorio dei dolci",
+      "alt": "Il laboratorio dei dolci con il tavolo in marmo infarinato, i biscotti di mais, una crostata, la pinza e un panettone sulle griglie.",
+      "didascalia": "Il laboratorio dei dolci."
+    },
+    "R-bruno": {
+      "titolo": "Bruno Bressanel",
+      "nome": "Bruno Bressanel",
+      "ruolo": "Titolare",
+      "alt": "Bruno Bressanel, titolare, in cantina tra le botti.",
+      "didascalia": "Bruno Bressanel, titolare"
+    },
+    "R-dario": {
+      "titolo": "Dario",
+      "nome": "Dario",
+      "ruolo": "Agronomo",
+      "alt": "Dario, agronomo, in vigna al tramonto.",
+      "didascalia": "Dario, agronomo"
+    },
+    "R-elena": {
+      "titolo": "Elena Bressanel",
+      "nome": "Elena Bressanel",
+      "ruolo": "Guida l'agriturismo",
+      "alt": "Elena Bressanel, che guida l'agriturismo, nella sala apparecchiata.",
+      "didascalia": "Elena Bressanel, guida l'agriturismo"
+    },
+    "R-graziella": {
+      "titolo": "Graziella",
+      "nome": "Graziella",
+      "ruolo": "Impiegata amministrativa",
+      "alt": "Graziella, impiegata amministrativa, alla scrivania del suo ufficio.",
+      "didascalia": "Graziella, impiegata amministrativa"
+    },
+    "R-ivano": {
+      "titolo": "Ivano",
+      "nome": "Ivano",
+      "ruolo": "Magazziniere",
+      "alt": "Ivano, magazziniere, in magazzino, con una scheda per le spedizioni in mano.",
+      "didascalia": "Ivano, magazziniere"
+    },
+    "R-marta": {
+      "titolo": "Marta",
+      "nome": "Marta",
+      "ruolo": "Casara",
+      "alt": "Marta, casara, davanti a una forma di formaggio.",
+      "didascalia": "Marta, casara"
+    },
+    "R-nicola": {
+      "titolo": "Nicola Bressanel",
+      "nome": "Nicola Bressanel",
+      "ruolo": "Negozio online e social",
+      "alt": "Nicola Bressanel, che cura il negozio online e i social, al tavolo con lo smartphone, accanto a una bottiglia.",
+      "didascalia": "Nicola Bressanel, negozio online e social"
+    },
+    "R-sandro": {
+      "titolo": "Sandro",
+      "nome": "Sandro",
+      "ruolo": "Commerciale",
+      "alt": "Sandro, commerciale, nella sala di un ristorante.",
+      "didascalia": "Sandro, commerciale"
+    },
+    "R-toni": {
+      "titolo": "Toni",
+      "nome": "Toni",
+      "ruolo": "Cantiniere",
+      "alt": "Toni, cantiniere, in cantina con un calice di vino.",
+      "didascalia": "Toni, cantiniere"
     }
   }
 }
