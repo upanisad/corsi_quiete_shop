@@ -37,9 +37,11 @@ def passi_costruzione(variante, base=None):
          "options": {"activate": True}},
         {"step": "setSiteLanguage", "language": "it_IT"},
         {"step": "mkdir", "path": f"{DATI}/img"},
+        {"step": "mkdir", "path": f"{DATI}/img-sito/originali"},
         {"step": "mkdir", "path": f"{WP}/wp-content/mu-plugins"},
         {"step": "writeFile", "path": f"{DATI}/prodotti.json", "data": dato("dati/prodotti.json", "dati/prodotti.json")},
         {"step": "writeFile", "path": f"{DATI}/ordini.json", "data": dato("dati/ordini.json", "dati/ordini.json")},
+        {"step": "writeFile", "path": f"{DATI}/immagini-sito.json", "data": dato("dati/immagini-sito.json", "dati/immagini-sito.json")},
         {"step": "writeFile", "path": f"{DATI}/build.php", "data": dato("src/build.php", "src/build.php")},
         {"step": "writeFile", "path": f"{WP}/wp-content/mu-plugins/quiete-regole.php",
          "data": dato("src/quiete-regole.php", "src/quiete-regole.php")},
@@ -49,6 +51,12 @@ def passi_costruzione(variante, base=None):
             passi.append({"step": "writeFile", "path": f"{DATI}/img/{f.name}", "data": url(base, f"immagini/{f.name}")})
     if base:
         passi.append({"step": "writeFile", "path": f"{DATI}/img/logo-quiete.png", "data": url(base, "marchio/logo-quiete.png")})
+    if base:  # foto del sito: compresse per tutti, l'originale di L02 serve allo sporco
+        for f in sorted((QUI / "immagini-sito").glob("*.jpg")):
+            passi.append({"step": "writeFile", "path": f"{DATI}/img-sito/{f.name}", "data": url(base, f"immagini-sito/{f.name}")})
+        for f in sorted((QUI / "immagini-sito" / "originali").glob("*.jpg")):
+            passi.append({"step": "writeFile", "path": f"{DATI}/img-sito/originali/{f.name}",
+                          "data": url(base, f"immagini-sito/originali/{f.name}")})
     passi.append({"step": "runPHP",
                   "code": f"<?php define('QUIETE_VARIANTE', '{variante}'); require '{DATI}/build.php';"})
     return passi
@@ -93,7 +101,7 @@ def main():
         (out / f"{v}.json").write_text(json.dumps(distr, ensure_ascii=False, indent=1), encoding="utf-8")
         link = "https://playground.wordpress.net/?blueprint-url=" + urllib.parse.quote(base + f"{v}.json", safe="")
         print(f"{v}: {link}")
-    print("Pubblica nel repo:", a.repo, "- cartelle: dati/ src/ immagini/ snapshot/ + build-*.json e pulito.json/sporco.json nella radice")
+    print("Pubblica nel repo:", a.repo, "- cartelle: dati/ src/ immagini/ immagini-sito/ snapshot/ + build-*.json e pulito.json/sporco.json nella radice")
 
 
 if __name__ == "__main__":

@@ -264,11 +264,61 @@ foreach ($ordini as $o) {
     $n_ord++;
 }
 
+/* ---------- 8a. Foto del sito (luoghi e persone, generate con AI) ---------- */
+/* dati in quiete-dati/immagini-sito.json, file in quiete-dati/img-sito/. Nello sporco: niente testo alternativo (errore 9) e foto di apertura della Home non compressa (errore 8) */
+$foto = array();
+$fs_json = $dir . 'immagini-sito.json';
+$fs = file_exists($fs_json) ? json_decode(file_get_contents($fs_json), true) : array('immagini' => array());
+foreach ($fs['immagini'] as $cod => $x) {
+    $file = $dir . 'img-sito/' . $cod . '.jpg';
+    if ($variante === 'sporco' && $cod === 'L02' && file_exists($dir . 'img-sito/originali/L02.jpg')) { $file = $dir . 'img-sito/originali/L02.jpg'; }
+    if (!file_exists($file)) { continue; }
+    $tmp = wp_tempnam($cod . '.jpg');
+    copy($file, $tmp);
+    $nome_file = ($variante === 'sporco') ? 'IMG_' . (4100 + count($foto)) . '.jpg' : sanitize_title($x['titolo']) . '.jpg';
+    $aid = media_handle_sideload(array('name' => $nome_file, 'tmp_name' => $tmp), 0, $x['titolo']);
+    if (is_wp_error($aid)) { continue; }
+    $alt = ($variante === 'sporco') ? '' : $x['alt'];
+    if ($alt !== '') { update_post_meta($aid, '_wp_attachment_image_alt', $alt); }
+    $cap = ($variante === 'sporco' && isset($x['didascalia_sporco'])) ? $x['didascalia_sporco'] : $x['didascalia'];
+    $foto[$cod] = array('id' => $aid, 'alt' => $alt, 'cap' => $cap, 'full' => wp_get_attachment_url($aid), 'large' => wp_get_attachment_image_url($aid, 'large'));
+}
+/* blocco immagine; $didascalia=false per non mostrarla */
+$img = function ($cod, $didascalia = true, $link = '') use ($foto) {
+    if (!isset($foto[$cod])) { return ''; }
+    $f = $foto[$cod];
+    $tag = '<img src="' . esc_url($f['large']) . '" alt="' . esc_attr($f['alt']) . '" class="wp-image-' . $f['id'] . '"/>';
+    if ($link) { $tag = '<a href="' . esc_url($link) . '">' . $tag . '</a>'; }
+    $cap = $didascalia ? '<figcaption class="wp-element-caption">' . esc_html($f['cap']) . '</figcaption>' : '';
+    $attr = array('id' => $f['id'], 'sizeSlug' => 'large', 'linkDestination' => $link ? 'custom' : 'none');
+    return '<!-- wp:image ' . wp_json_encode($attr) . ' --><figure class="wp-block-image size-large">' . $tag . $cap . '</figure><!-- /wp:image -->';
+};
+if (isset($foto['L04'], $cat_id['Vini'])) { update_term_meta($cat_id['Vini'], 'thumbnail_id', $foto['L04']['id']); }
+$par = function ($t) { return '<!-- wp:paragraph --><p>' . $t . '</p><!-- /wp:paragraph -->'; };
+$tit = function ($t) { return '<!-- wp:heading --><h2 class="wp-block-heading">' . $t . '</h2><!-- /wp:heading -->'; };
+$avviso = $par('<strong>Attenzione:</strong> questo è un negozio di prova creato per i corsi di StyleSoft dML. L\'azienda, i prodotti, i prezzi e i clienti sono inventati, e le foto sono generate con AI.');
+
 /* ---------- 8. Pagine ---------- */
 $pagine = array(
-    'Chi siamo' => '<p>Siamo una famiglia di viticoltori e casari di Borgo Cime, sulle colline del Valdobbiadene: vino, formaggi, yogurt e dolci.</p><p><strong>Attenzione:</strong> questo è un negozio di prova creato per i corsi di StyleSoft dML. L\'azienda, i prodotti, i prezzi e i clienti sono inventati.</p>',
-    'Spedizioni e resi' => '<p>Italia: 9,90 €, gratis sopra 89 €. I prodotti refrigerati hanno un supplemento di 6,00 € e partono solo il lunedì e il martedì.</p><p>Austria e Germania: solo vino e dolci non refrigerati. Formaggi e yogurt si spediscono solo in Italia. La ricotta fresca si ritira in cantina.</p>',
-    'Contatti' => '<p>Email: info@quietenellecime.example<br>Telefono: 0499 55 01 001</p><p>Sito dimostrativo: nessuna richiesta riceverà risposta.</p>',
+    'Chi siamo' => $img('IN01')
+        . $par('Siamo una famiglia di viticoltori e casari di Borgo Cime, sulle colline del Valdobbiadene. Tutto quello che vendiamo lo facciamo noi: il vino prima di tutto, poi formaggi, yogurt e dolci.')
+        . $tit('Dal 1978')
+        . $par('Nel 1978 Aldo e Rina Bressanel smettono di portare l\'uva alla cantina sociale e imbottigliano il primo vino con la loro etichetta. Dal 1996 l\'azienda è guidata dal figlio Bruno. Nel 2008 apre l\'agriturismo, nel 2012 il caseificio, nel 2015 il laboratorio dei dolci. Oggi in azienda lavorano anche Elena, che guida l\'agriturismo, e Nicola, che nel 2023 ha aperto questo negozio.')
+        . $img('IN02')
+        . $tit('Il vigneto')
+        . $par('Quattordici ettari, nove dei quali a Glera per il Valdobbiadene DOCG. I filari stanno su pendenze così forti che quasi tutto si lavora a mano, vendemmia compresa. Ne escono circa 110.000 bottiglie l\'anno.')
+        . $img('L04')
+        . $tit('La stalla, il caseificio, l\'agriturismo')
+        . $par('Dodici vacche danno il latte per i nostri formaggi e yogurt, che Marta lavora ogni mattina a pochi metri dalla stalla. L\'agriturismo ha otto camere e una sala da 45 coperti: è aperto da metà marzo all\'Epifania, con cene il venerdì, il sabato e la domenica e degustazioni su prenotazione.')
+        . $avviso,
+    'Spedizioni e resi' => $par('Italia: 9,90 €, gratis sopra 89 €. I prodotti refrigerati hanno un supplemento di 6,00 € e partono solo il lunedì e il martedì.')
+        . $par('Austria e Germania: solo vino e dolci non refrigerati. Formaggi e yogurt si spediscono solo in Italia. La ricotta fresca si ritira in cantina.')
+        . $img('L03'),
+    'Contatti' => $par('Email: info@quietenellecime.example<br>Telefono: 0499 55 01 001')
+        . $tit('Come arrivare')
+        . $par('Borgo Cime è in cima alla collina, 6 km sopra Pieve di Sotto. L\'ultimo chilometro è stretto e in salita.')
+        . $img('L03', false)
+        . $par('Sito dimostrativo: nessuna richiesta riceverà risposta.'),
     'Privacy' => '<p>Testo segnaposto. Negozio di prova: non raccogliamo dati di persone reali.</p>',
 );
 foreach ($pagine as $titolo => $testo) {
@@ -288,13 +338,26 @@ $shop_id = wc_get_page_id('shop');
 if ($shop_id) { wp_update_post(array('ID' => $shop_id, 'post_title' => 'Negozio')); }
 update_option('sidebars_widgets', array('wp_inactive_widgets' => array(), 'sidebar-1' => array(), 'array_version' => 3));
 /* ---------- 9. Home, footer e aspetto (tema a blocchi Drinkify Lite) ---------- */
-$home_blocks = '<!-- wp:cover {"customOverlayColor":"#4f1420","minHeight":380,"isDark":true,"align":"full"} -->'
- . '<div class="wp-block-cover alignfull is-light" style="min-height:380px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim" style="background-color:#4f1420"></span><div class="wp-block-cover__inner-container">'
+$cop = isset($foto['L02']) ? $foto['L02'] : null;
+$cop_attr = $cop ? '"url":"' . esc_url($cop['full']) . '","id":' . $cop['id'] . ',"alt":"' . esc_attr($cop['alt']) . '","dimRatio":50,' : '';
+$cop_img = $cop ? '<img class="wp-block-cover__image-background wp-image-' . $cop['id'] . '" alt="' . esc_attr($cop['alt']) . '" src="' . esc_url($cop['full']) . '" data-object-fit="cover"/>' : '';
+$cop_dim = $cop ? 'has-background-dim-50 has-background-dim' : 'has-background-dim-100 has-background-dim';
+$home_blocks = '<!-- wp:cover {' . $cop_attr . '"customOverlayColor":"#4f1420","minHeight":' . ($cop ? 480 : 380) . ',"isDark":true,"align":"full"} -->'
+ . '<div class="wp-block-cover alignfull is-dark" style="min-height:' . ($cop ? 480 : 380) . 'px"><span aria-hidden="true" class="wp-block-cover__background ' . $cop_dim . '" style="background-color:#4f1420"></span>' . $cop_img . '<div class="wp-block-cover__inner-container">'
  . '<!-- wp:heading {"textAlign":"center","level":1,"textColor":"white"} --><h1 class="wp-block-heading has-text-align-center has-white-color has-text-color">La Quiete nelle Cime</h1><!-- /wp:heading -->'
  . '<!-- wp:paragraph {"align":"center","textColor":"white","fontSize":"large"} --><p class="has-text-align-center has-white-color has-text-color has-large-font-size">Vino, formaggi, yogurt e dolci fatti da noi, sui colli del Prosecco Superiore. Azienda agricola e agriturismo dal 1978.</p><!-- /wp:paragraph -->'
  . '<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} --><div class="wp-block-buttons"><!-- wp:button --><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="' . esc_url(get_permalink(wc_get_page_id('shop'))) . '">Vai al negozio</a></div><!-- /wp:button --></div><!-- /wp:buttons -->'
  . '</div></div><!-- /wp:cover -->'
  . '<!-- wp:spacer {"height":"40px"} --><div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->'
+ . (isset($foto['L04'], $foto['IN02'], $foto['IN01'])
+    ? '<!-- wp:heading {"textAlign":"center"} --><h2 class="wp-block-heading has-text-align-center">Chi siamo</h2><!-- /wp:heading -->'
+      . '<!-- wp:columns --><div class="wp-block-columns">'
+      . '<!-- wp:column --><div class="wp-block-column">' . $img('L04', false, home_url('/chi-siamo/')) . '<!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center"><strong>Le vigne</strong><br>14 ettari ripidi, lavorati a mano.</p><!-- /wp:paragraph --></div><!-- /wp:column -->'
+      . '<!-- wp:column --><div class="wp-block-column">' . $img('IN02', false, home_url('/chi-siamo/')) . '<!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center"><strong>La famiglia</strong><br>Tre generazioni, dal 1978.</p><!-- /wp:paragraph --></div><!-- /wp:column -->'
+      . '<!-- wp:column --><div class="wp-block-column">' . $img('IN01', false, home_url('/chi-siamo/')) . '<!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center"><strong>La squadra</strong><br>Vigna, cantina, caseificio e agriturismo.</p><!-- /wp:paragraph --></div><!-- /wp:column -->'
+      . '</div><!-- /wp:columns -->'
+      . '<!-- wp:spacer {"height":"40px"} --><div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->'
+    : '')
  . '<!-- wp:heading {"textAlign":"center"} --><h2 class="wp-block-heading has-text-align-center">I nostri prodotti</h2><!-- /wp:heading -->'
  . '<!-- wp:shortcode -->[products limit="12" columns="3" orderby="menu_order" order="ASC"]<!-- /wp:shortcode -->';
 $home_id = wp_insert_post(array('post_type' => 'page', 'post_title' => 'Home', 'post_name' => 'home', 'post_status' => 'publish', 'post_content' => $home_blocks));
@@ -315,7 +378,7 @@ $footer_blocks = '<!-- wp:group {"style":{"spacing":{"padding":{"top":"40px","bo
  . '<div class="wp-block-group has-base-color has-contrast-background-color has-text-color has-background" style="padding-top:40px;padding-bottom:40px">'
  . '<!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center"><strong>La Quiete nelle Cime</strong> · Azienda agricola · Agriturismo, dal 1978<br>Borgo Cime 1, Pieve di Sotto (TV) · info@quietenellecime.example · 0499 55 01 001</p><!-- /wp:paragraph -->'
  . '<!-- wp:page-list {"isNavigationChild":false} /-->'
- . '<!-- wp:paragraph {"align":"center","fontSize":"small"} --><p class="has-text-align-center has-small-font-size">Negozio di prova per i corsi StyleSoft dML: azienda, prodotti, prezzi e clienti sono inventati.</p><!-- /wp:paragraph -->'
+ . '<!-- wp:paragraph {"align":"center","fontSize":"small"} --><p class="has-text-align-center has-small-font-size">Negozio di prova per i corsi StyleSoft dML: azienda, prodotti, prezzi e clienti sono inventati. Le immagini sono generate con AI.</p><!-- /wp:paragraph -->'
  . '</div><!-- /wp:group -->';
 $footers = get_block_templates(array('area' => 'footer'), 'wp_template_part');
 foreach ($footers as $f) {

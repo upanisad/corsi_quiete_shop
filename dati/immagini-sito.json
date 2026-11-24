@@ -1,0 +1,31 @@
+{
+  "_nota": "Foto del sito (non dei prodotti). Codici come in bibbia/09-luoghi-e-immagini.md del repo corsi_quiete_caso. Immagini sintetizzate con AI. File in immagini-sito/ (compressi) e immagini-sito/originali/ (L02 non compresso, usato solo dallo sporco).",
+  "immagini": {
+    "L02": {
+      "titolo": "Borgo Cime dall'alto",
+      "alt": "Borgo Cime visto dall'alto: la cantina in pietra, la casa padronale con il pergolato e la barchessa ad archi, in mezzo ai vigneti.",
+      "didascalia": "Borgo Cime, all'alba: la cantina, la casa con l'agriturismo e la barchessa."
+    },
+    "L03": {
+      "titolo": "L'ultimo chilometro",
+      "alt": "La strada stretta e in salita verso Borgo Cime, con un tornante, uno specchio stradale e i vigneti ai lati.",
+      "didascalia": "L'ultimo chilometro verso Borgo Cime: stretto e in salita. Quando il furgone del corriere non riesce a salire, i pacchi li portiamo noi giù a Pieve di Sotto."
+    },
+    "L04": {
+      "titolo": "Il vigneto di Rive Alte",
+      "alt": "I filari ripidi di Rive Alte con i grappoli di Glera maturi, un capanno in pietra e le cassette rosse pronte per la vendemmia.",
+      "didascalia": "Rive Alte a inizio settembre: qui la vendemmia si fa a mano."
+    },
+    "IN01": {
+      "titolo": "Il team nel cortile",
+      "alt": "Il team della Quiete nelle Cime con alcuni ospiti dell'agriturismo, nel cortile davanti alla barchessa.",
+      "didascalia": "Il team, con alcuni ospiti dell'agriturismo che ci hanno dato il permesso di pubblicare la foto.",
+      "didascalia_sporco": "Il nostro team."
+    },
+    "IN02": {
+      "titolo": "La famiglia a tavola",
+      "alt": "Bruno, Luisa, Elena e Nicola Bressanel a pranzo nella cucina di casa, con vino, pane e formaggi.",
+      "didascalia": "La domenica a tavola: Bruno e Luisa con Elena e Nicola."
+    }
+  }
+}

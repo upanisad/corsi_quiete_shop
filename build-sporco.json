@@ -48,6 +48,10 @@
   },
   {
    "step": "mkdir",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/originali"
+  },
+  {
+   "step": "mkdir",
    "path": "/wordpress/wp-content/mu-plugins"
   },
   {
@@ -64,6 +68,14 @@
    "data": {
     "resource": "url",
     "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/dati/ordini.json"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/immagini-sito.json",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/dati/immagini-sito.json"
    }
   },
   {
@@ -320,6 +332,54 @@
    "data": {
     "resource": "url",
     "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/marchio/logo-quiete.png"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/IN01.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/IN01.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/IN02.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/IN02.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/L02.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/L02.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/L03.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/L03.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/L04.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/L04.jpg"
+   }
+  },
+  {
+   "step": "writeFile",
+   "path": "/wordpress/wp-content/quiete-dati/img-sito/originali/L02.jpg",
+   "data": {
+    "resource": "url",
+    "url": "https://raw.githubusercontent.com/upanisad/corsi_quiete_shop/main/immagini-sito/originali/L02.jpg"
    }
   },
   {
