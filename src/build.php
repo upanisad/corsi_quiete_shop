@@ -516,7 +516,7 @@ wp_update_custom_css_post(
     ".wp-block-site-logo img{width:170px!important;height:auto!important}\n"
   . ".woocommerce-store-notice,.wc-block-components-notice-banner.is-info{background:#4f1420!important;color:#fff!important}\n"
   . ".woocommerce-store-notice a{color:#f1dc8a!important}\n"
-  . "h1,h2,h3,h4,.wp-block-post-title,.wp-block-query-title,.wp-block-button__link{text-transform:none!important}",
+  . "h1,h2,h3,h4,.wp-block-post-title,.wp-block-query-title,.wp-block-button__link,.wp-block-site-title,.wp-block-site-title a,.wp-block-navigation a,.wp-block-navigation-item__content,.wp-block-navigation-item__label{text-transform:none!important}",
     array('stylesheet' => $tema)
 );
 update_option('show_on_front', 'page');
